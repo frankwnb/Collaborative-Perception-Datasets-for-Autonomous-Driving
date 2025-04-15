@@ -28,12 +28,14 @@ Several **open-source platforms** are widely used for data synthesis:
 CoRL 2017
 
 
+
+
 ### CARLA: An Open Urban Driving Simulator
 
-#### Background and Motivation
+- **Background and Motivation**
 The development of autonomous driving systems, particularly in urban environments, presents significant challenges. These challenges include complex multi-agent dynamics, the need to track numerous moving objects, and adapting to rare events such as accidents or sudden roadblocks. Real-world testing for such systems is costly, risky, and logistically difficult. Simulations offer a viable alternative for training and validating autonomous driving models, enabling the testing of various scenarios without the associated risks and costs. Existing simulators, however, often fail to replicate the complexity of urban driving. Thus, CARLA was developed as an open-source platform to provide a highly realistic, customizable, and flexible simulation environment for autonomous driving research.
 
-#### Key Contributions
+- **Key Contributions**
 CARLA introduces a robust and flexible simulation platform tailored for autonomous driving research. It provides a comprehensive urban environment, with detailed digital assets like buildings, vehicles, and pedestrians. The platform supports a wide range of sensor suites, including RGB cameras, LiDAR, and radar, and allows for the specification of various environmental conditions such as weather, time of day, and traffic density. CARLA facilitates the study of autonomous driving approaches through modular pipelines, imitation learning, and reinforcement learning, all tested in controlled, goal-directed navigation tasks. Notably, CARLA enables researchers to evaluate driving strategies in diverse and challenging urban settings, making it a valuable tool for developing and benchmarking autonomous driving systems.
 
 
@@ -73,6 +75,12 @@ These simulators are instrumental in generating data under various conditions, p
 | **Infra** | TUMTraf-I | 2023 | ITSC | C, L | Real | 3DOD | [download](https://innovation-mobility.com/en/project-providentia/a9-dataset/) |
 | **Infra** | RoScenes | 2024 | ECCV | C | Real | 3DOD | [download](https://roscenes.github.io./) |
 | **Infra** | H-V2X | 2024 | ECCV | C, R | Real | BEV Det, MOT, TP | [download](https://pan.quark.cn/s/86d19da10d18) |
+Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
+
+
+
+| **View** | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
+|----------|-------------|----------|-----------|-------------|------------|-----------|----------|
 | **V2V** | COMAP | 2021 | ISPRS | L, C | Sim | 3DOD, SS | [download](https://demuc.de/colmap/) |
 | **V2V** | CODD | 2021 | RA-L | L | Sim | Registration | [download](https://github.com/eduardohenriquearnold/fastreg) |
 | **V2V** | OPV2V | 2022 | ICRA | C, L, R | Sim | 3DOD | [download](https://mobility-lab.seas.ucla.edu/opv2v/) |
@@ -83,6 +91,11 @@ These simulators are instrumental in generating data under various conditions, p
 | **V2V** | OPV2V-H | 2024 | ICLR | C, L, R | Sim | 3DOD | [download](https://github.com/yifanlu0227/HEAL) |
 | **V2V** | V2V-QA | 2025 | arXiv | L, C | Real | 3DOD, PQA | [download](https://eddyhkchiu.github.io/v2vllm.github.io/) |
 | **V2V** | CP-UAV | 2022 | NIPS | L, C | Sim | 3DOD | [download](https://siheng-chen.github.io/dataset/coperception-uav/) |
+Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
+
+
+| **View** | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
+|----------|-------------|----------|-----------|-------------|------------|-----------|----------|
 | **V2I** | CoopInf | 2020 | TITS | L, C | Sim | 3DOD | [download](https://github.com/eduardohenriquearnold/coop-3dod-infra?tab=readme-ov-file) |
 | **V2I** | DAIR-V2X-C | 2022 | CVPR | L, C | Real | 3DOD | [download](https://air.tsinghua.edu.cn/DAIR-V2X/index.html) |
 | **V2I** | V2X-Seq | 2023 | CVPR | L, C | Real | 3DOT, TP | [download](https://github.com/AIR-THU/DAIR-V2X-Seq) |
@@ -91,6 +104,11 @@ These simulators are instrumental in generating data under various conditions, p
 | **V2I** | DAIR-V2XReid | 2024 | TITS | L, C | Real | 3DOD, Re-ID | [download](https://github.com/Niuyaqing/DAIR-V2XReid) |
 | **V2I** | TUMTraf V2X | 2024 | CVPR | L, C | Real | 3DOD, MOT | [download](https://tum-traffic-dataset.github.io/tumtraf-v2x/) |
 | **V2I** | V2X-Radar | 2024 | arxiv | L, C, R | Real | 3DOD | [download](http://openmpd.com/column/V2X-Radar) |
+Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
+
+
+| **View** | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
+|----------|-------------|----------|-----------|-------------|------------|-----------|----------|
 | **V2X** | V2X-Sim | 2022 | RA-L | L, C | Sim | 3DOD, MOT, SS | [download](https://ai4ce.github.io/V2X-Sim/download.html) |
 | **V2X** | V2XSet | 2022 | ECCV | L, C | Sim | 3DOD | [download](https://paperswithcode.com/dataset/v2xset) |
 | **V2X** | DOLPHINS | 2022 | ACCV | L, C | Sim | 2DOD, 3DOD | [download](https://dolphins-dataset.net/) |
@@ -104,6 +122,11 @@ These simulators are instrumental in generating data under various conditions, p
 | **V2X** | V2XPnP-Seq | 2024 | arxiv | L, C | Real | Perception and Prediction | [download](https://mobility-lab.seas.ucla.edu/v2xpnp/) |
 | **V2X** | Mixed Signals | 2025 | arxiv | L | Real | 3DOD | [download](https://mixedsignalsdataset.cs.cornell.edu/) |
 | **V2X** | SCOPE | 2024 | arxiv | C, L | Sim | 2DOD, 3DOD, SS, S2R | [download](https://ekut-es.github.io/scope) |
+Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
+
+
+| **View** | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
+|----------|-------------|----------|-----------|-------------|------------|-----------|----------|
 | **I2I** | Rcooper | 2024 | CVPR | C, L | Real | 3DOD, MOT | [download](https://github.com/AIR-THU/DAIR-Rcooper) |
 | **I2I** | InScope | 2024 | arxiv | L | Real | 3DOD, MOT | [download](https://github.com/xf-zh/InScope) |
 
