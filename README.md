@@ -1,4 +1,4 @@
-# Collaborative / Cooperative / Multi-agent Perception
+# Collaborative / Cooperative / Perception Datasets
 ## Overview
 
 This repository consolidates **Collaborative Perception (CP)** datasets for autonomous driving, covering a wide range of communication paradigms, including pure **roadside perception**, **Vehicle-to-Vehicle (V2V)**, **Vehicle-to-Infrastructure (V2I)**, **Vehicle-to-Everything (V2X)**, and **Infrastructure-to-Infrastructure (I2I)** scenarios. It includes nearly all publicly available **CP** datasets and provides links to relevant publications, source code, and dataset downloads, offering researchers an efficient and centralized resource to aid their research and development in this field.
@@ -13,7 +13,7 @@ First, the repository introduces commonly used **autonomous driving simulation t
 - ### [[V2I Datasets]()]
 - ### [[V2X Datasets]()]
 - ### [[I2I Datasets]()]
-- ### [[Methods()]
+- ### [[Methods]()]
 
 
 ## Simulator - Simulators for Collaborative Perception (CP) Research
@@ -45,6 +45,53 @@ These simulators are instrumental in generating data under various conditions, p
 
 
 
+| **View** | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **Link** |
+|----------|-------------|----------|-----------|-------------|------------|-----------|----------|
+| **Infra** | Ko-PER | 2014 | ITSC | C, L | Real | 3DOD, MOT | [Link](https://www.uni-ulm.de/in/mrm/forschung/datensaetze.html) |
+| **Infra** | CityFlow | 2019 | CVPR | C | Real | MTSCT/MTMCT, ReID | [Link](https://cityflow-project.github.io/) |
+| **Infra** | INTERACTION | 2019 | IROS | C, L | Real | 2DOD, TP | [Link](https://interaction-dataset.com/) |
+| **Infra** | A9-Dataset | 2022 | IV | C, L | Real | 3DOD | [Link](https://a9-dataset.com/) |
+| **Infra** | IPS300+ | 2022 | ICRA | C, L | Real | 2DOD, 3DOD | [Link](http://www.openmpd.com/column/IPS300) |
+| **Infra** | Rope3D | 2022 | CVPR | C, L | Real | 2DOD, 3DOD | [Link](https://thudair.baai.ac.cn/rope) |
+| **Infra** | LUMPI | 2022 | IV | C, L | Real | 3DOD | [Link](https://data.uni-hannover.de/cs_CZ/dataset/lumpi) |
+| **Infra** | TUMTraf-I | 2023 | ITSC | C, L | Real | 3DOD | [Link](https://innovation-mobility.com/en/project-providentia/a9-dataset/) |
+| **Infra** | RoScenes | 2024 | ECCV | C | Real | 3DOD | [Link](https://roscenes.github.io./) |
+| **Infra** | H-V2X | 2024 | ECCV | C, R | Real | BEV Det, MOT, TP | [Link](https://pan.quark.cn/s/86d19da10d18) |
+| **V2V** | COMAP | 2021 | ISPRS | L, C | Sim | 3DOD, SS | [Link](https://demuc.de/colmap/) |
+| **V2V** | CODD | 2021 | RA-L | L | Sim | Registration | [Link](https://github.com/eduardohenriquearnold/fastreg) |
+| **V2V** | OPV2V | 2022 | ICRA | C, L, R | Sim | 3DOD | [Link](https://mobility-lab.seas.ucla.edu/opv2v/) |
+| **V2V** | OPV2V+ | 2023 | CVPR | C, L, R | Sim | 3DOD | [Link](https://siheng-chen.github.io/dataset/CoPerception+/) |
+| **V2V** | V2V4Real | 2023 | CVPR | L, C | Real | 3DOD, MOT, S2R | [Link](https://mobility-lab.seas.ucla.edu/v2v4real/) |
+| **V2V** | LUCOOP | 2023 | IV | L | Real | 3DOD | [Link](https://data.uni-hannover.de/vault/icsens/axmann/lucoop-leibniz-university-cooperative-perception-and-urban-navigation-dataset/) |
+| **V2V** | MARS | 2024 | CVPR | L, C | Real | VPR, NR | [Link](https://ai4ce.github.io/MARS/) |
+| **V2V** | OPV2V-H | 2024 | ICLR | C, L, R | Sim | 3DOD | [Link](https://github.com/yifanlu0227/HEAL) |
+| **V2V** | V2V-QA | 2025 | arXiv | L, C | Real | 3DOD, PQA | [Link](https://eddyhkchiu.github.io/v2vllm.github.io/) |
+| **V2V** | CP-UAV | 2022 | NIPS | L, C | Sim | 3DOD | [Link](https://siheng-chen.github.io/dataset/coperception-uav/) |
+| **V2I** | CoopInf | 2020 | TITS | L, C | Sim | 3DOD | [Link](https://github.com/eduardohenriquearnold/coop-3dod-infra?tab=readme-ov-file) |
+| **V2I** | DAIR-V2X-C | 2022 | CVPR | L, C | Real | 3DOD | [Link](https://air.tsinghua.edu.cn/DAIR-V2X/index.html) |
+| **V2I** | V2X-Seq | 2023 | CVPR | L, C | Real | 3DOT, TP | [Link](https://github.com/AIR-THU/DAIR-V2X-Seq) |
+| **V2I** | HoloVIC | 2024 | CVPR | L, C | Real | 3DOD, MOT | [Link](https://holovic.net) |
+| **V2I** | OTVIC | 2024 | IROS | L, C | Real | 3DOD | [Link](https://sites.google.com/view/otvic) |
+| **V2I** | DAIR-V2XReid | 2024 | TITS | L, C | Real | 3DOD, Re-ID | [Link](https://github.com/Niuyaqing/DAIR-V2XReid) |
+| **V2I** | TUMTraf V2X | 2024 | CVPR | L, C | Real | 3DOD, MOT | [Link](https://tum-traffic-dataset.github.io/tumtraf-v2x/) |
+| **V2I** | V2X-Radar | 2024 | arxiv | L, C, R | Real | 3DOD | [Link](http://openmpd.com/column/V2X-Radar) |
+| **V2X** | V2X-Sim | 2022 | RA-L | L, C | Sim | 3DOD, MOT, SS | [Link](https://ai4ce.github.io/V2X-Sim/download.html) |
+| **V2X** | V2XSet | 2022 | ECCV | L, C | Sim | 3DOD | [Link](https://paperswithcode.com/dataset/v2xset) |
+| **V2X** | DOLPHINS | 2022 | ACCV | L, C | Sim | 2DOD, 3DOD | [Link](https://dolphins-dataset.net/) |
+| **V2X** | DeepAccident | 2024 | AAAI | L, C | Sim | 3DOD, MOT, SS, TP | [Link](https://deepaccident.github.io/) |
+| **V2X** | V2X-Real | 2024 | ECCV | L, C | Real | 3DOD | [Link](https://mobility-lab.seas.ucla.edu/v2x-real) |
+| **V2X** | Multi-V2X | 2024 | arxiv | L, C | Sim | 3DOD, MOT | [Link](http://github.com/RadetzkyLi/Multi-V2X) |
+| **V2X** | Adver-City | 2024 | arxiv | L, C | Sim | 3DOD, MOT, SS | [Link](https://labs.cs.queensu.ca/quarrg/datasets/adver-city/) |
+| **V2X** | DAIR-V2X-Traj | 2024 | NIPS | L, C | Real | MF | [Link](https://github.com/AIR-THU/V2X-Graph) |
+| **V2X** | WHALES | 2024 | arxiv | L, C | Sim | 3DOD | [Link](https://github.com/chensiweiTHU/WHALES) |
+| **V2X** | V2X-R | 2024 | arxiv | L, C, R | Sim | 3DOD | [Link](https://github.com/ylwhxht/V2X-R) |
+| **V2X** | V2XPnP-Seq | 2024 | arxiv | L, C | Real | Perception and Prediction | [Link](https://mobility-lab.seas.ucla.edu/v2xpnp/) |
+| **V2X** | Mixed Signals | 2025 | arxiv | L | Real | 3DOD | [Link](https://mixedsignalsdataset.cs.cornell.edu/) |
+| **V2X** | SCOPE | 2024 | arxiv | C, L | Sim | 2DOD, 3DOD, SS, S2R | [Link](https://ekut-es.github.io/scope) |
+| **I2I** | Rcooper | 2024 | CVPR | C, L | Real | 3DOD, MOT | [Link](https://github.com/AIR-THU/DAIR-Rcooper) |
+| **I2I** | InScope | 2024 | arxiv | L | Real | 3DOD, MOT | [Link](https://github.com/xf-zh/InScope) |
+
+Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
 
 
 
