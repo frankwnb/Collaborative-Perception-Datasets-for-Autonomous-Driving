@@ -1,4 +1,4 @@
-# Collaborative / Cooperative / Perception Datasets
+# Collaborative / Cooperative / Perception Datasets - Updating
 ## Overview
 
 This repository consolidates **Collaborative Perception (CP)** datasets for autonomous driving, covering a wide range of communication paradigms, including pure **roadside perception**, **Vehicle-to-Vehicle (V2V)**, **Vehicle-to-Infrastructure (V2I)**, **Vehicle-to-Everything (V2X)**, and **Infrastructure-to-Infrastructure (I2I)** scenarios. It includes nearly all publicly available **CP** datasets and provides links to relevant publications, source code, and dataset downloads, offering researchers an efficient and centralized resource to aid their research and development in this field.
