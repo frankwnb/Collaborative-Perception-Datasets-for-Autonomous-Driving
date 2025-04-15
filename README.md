@@ -22,18 +22,34 @@ First, the repository introduces commonly used **autonomous driving simulation t
 
 Several **open-source platforms** are widely used for data synthesis:
 
-### **CARLA**:
-- **Brief summary**: A versatile simulator that supports a wide variety of **driving scenarios** and **multimodal sensors**, including **RGB**, **depth**, **radar**, and **LiDAR**. While **CARLA** provides valuable simulation capabilities, it does have limitations in its **LiDAR simulation**, particularly with **point cloud intensity** and **echo dropout modeling**.
+| **Simulator** | **Year** | **Venue** |
+|-------------|----------|-----------|
 
-- **Introduction**:  
-This paper introduces **CARLA**, an open-source urban driving simulator designed to advance autonomous driving research. The motivation behind CARLA is to address the limitations of physical world testing, which is costly and logistically difficult, by providing a flexible, cost-effective, and safe alternative for training and evaluating autonomous driving systems. The core contributions include the creation of a highly customizable and realistic simulation environment capable of replicating complex urban scenarios, including dynamic traffic, pedestrians, and variable weather conditions. CARLA allows researchers to test various autonomous driving approaches such as modular pipelines, imitation learning, and reinforcement learning. The simulator provides an open platform for researchers to explore these methods in a controlled setting while ensuring reproducibility and enabling comparisons across different approaches. 
-
-The paper demonstrates CARLA’s utility through experiments evaluating the performance of autonomous systems on increasingly difficult driving tasks, revealing the challenges of generalization to new environments and conditions. This research is significant as it provides the community with an essential tool for autonomous driving research, promoting innovation in sensorimotor control and autonomous vehicle development.
+CoRL 2017
 
 
+### CARLA: An Open Urban Driving Simulator
+
+#### Background and Motivation
+The development of autonomous driving systems, particularly in urban environments, presents significant challenges. These challenges include complex multi-agent dynamics, the need to track numerous moving objects, and adapting to rare events such as accidents or sudden roadblocks. Real-world testing for such systems is costly, risky, and logistically difficult. Simulations offer a viable alternative for training and validating autonomous driving models, enabling the testing of various scenarios without the associated risks and costs. Existing simulators, however, often fail to replicate the complexity of urban driving. Thus, CARLA was developed as an open-source platform to provide a highly realistic, customizable, and flexible simulation environment for autonomous driving research.
+
+#### Key Contributions
+CARLA introduces a robust and flexible simulation platform tailored for autonomous driving research. It provides a comprehensive urban environment, with detailed digital assets like buildings, vehicles, and pedestrians. The platform supports a wide range of sensor suites, including RGB cameras, LiDAR, and radar, and allows for the specification of various environmental conditions such as weather, time of day, and traffic density. CARLA facilitates the study of autonomous driving approaches through modular pipelines, imitation learning, and reinforcement learning, all tested in controlled, goal-directed navigation tasks. Notably, CARLA enables researchers to evaluate driving strategies in diverse and challenging urban settings, making it a valuable tool for developing and benchmarking autonomous driving systems.
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 - **SUMO**: A simulator primarily focused on **vehicle** and **pedestrian trajectory simulation**. It can be co-simulated with **CARLA** to improve **scene fidelity** and add more realism to the simulation of road environments.
 
 - **AirSim**: A simulation platform designed for testing **autonomous vehicles** in **3D environments** with a focus on both **driving** and **flying** tasks.
@@ -45,51 +61,51 @@ These simulators are instrumental in generating data under various conditions, p
 
 
 
-| **View** | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **Link** |
+| **View** | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
 |----------|-------------|----------|-----------|-------------|------------|-----------|----------|
-| **Infra** | Ko-PER | 2014 | ITSC | C, L | Real | 3DOD, MOT | [Link](https://www.uni-ulm.de/in/mrm/forschung/datensaetze.html) |
-| **Infra** | CityFlow | 2019 | CVPR | C | Real | MTSCT/MTMCT, ReID | [Link](https://cityflow-project.github.io/) |
-| **Infra** | INTERACTION | 2019 | IROS | C, L | Real | 2DOD, TP | [Link](https://interaction-dataset.com/) |
-| **Infra** | A9-Dataset | 2022 | IV | C, L | Real | 3DOD | [Link](https://a9-dataset.com/) |
-| **Infra** | IPS300+ | 2022 | ICRA | C, L | Real | 2DOD, 3DOD | [Link](http://www.openmpd.com/column/IPS300) |
-| **Infra** | Rope3D | 2022 | CVPR | C, L | Real | 2DOD, 3DOD | [Link](https://thudair.baai.ac.cn/rope) |
-| **Infra** | LUMPI | 2022 | IV | C, L | Real | 3DOD | [Link](https://data.uni-hannover.de/cs_CZ/dataset/lumpi) |
-| **Infra** | TUMTraf-I | 2023 | ITSC | C, L | Real | 3DOD | [Link](https://innovation-mobility.com/en/project-providentia/a9-dataset/) |
-| **Infra** | RoScenes | 2024 | ECCV | C | Real | 3DOD | [Link](https://roscenes.github.io./) |
-| **Infra** | H-V2X | 2024 | ECCV | C, R | Real | BEV Det, MOT, TP | [Link](https://pan.quark.cn/s/86d19da10d18) |
-| **V2V** | COMAP | 2021 | ISPRS | L, C | Sim | 3DOD, SS | [Link](https://demuc.de/colmap/) |
-| **V2V** | CODD | 2021 | RA-L | L | Sim | Registration | [Link](https://github.com/eduardohenriquearnold/fastreg) |
-| **V2V** | OPV2V | 2022 | ICRA | C, L, R | Sim | 3DOD | [Link](https://mobility-lab.seas.ucla.edu/opv2v/) |
-| **V2V** | OPV2V+ | 2023 | CVPR | C, L, R | Sim | 3DOD | [Link](https://siheng-chen.github.io/dataset/CoPerception+/) |
-| **V2V** | V2V4Real | 2023 | CVPR | L, C | Real | 3DOD, MOT, S2R | [Link](https://mobility-lab.seas.ucla.edu/v2v4real/) |
-| **V2V** | LUCOOP | 2023 | IV | L | Real | 3DOD | [Link](https://data.uni-hannover.de/vault/icsens/axmann/lucoop-leibniz-university-cooperative-perception-and-urban-navigation-dataset/) |
-| **V2V** | MARS | 2024 | CVPR | L, C | Real | VPR, NR | [Link](https://ai4ce.github.io/MARS/) |
-| **V2V** | OPV2V-H | 2024 | ICLR | C, L, R | Sim | 3DOD | [Link](https://github.com/yifanlu0227/HEAL) |
-| **V2V** | V2V-QA | 2025 | arXiv | L, C | Real | 3DOD, PQA | [Link](https://eddyhkchiu.github.io/v2vllm.github.io/) |
-| **V2V** | CP-UAV | 2022 | NIPS | L, C | Sim | 3DOD | [Link](https://siheng-chen.github.io/dataset/coperception-uav/) |
-| **V2I** | CoopInf | 2020 | TITS | L, C | Sim | 3DOD | [Link](https://github.com/eduardohenriquearnold/coop-3dod-infra?tab=readme-ov-file) |
-| **V2I** | DAIR-V2X-C | 2022 | CVPR | L, C | Real | 3DOD | [Link](https://air.tsinghua.edu.cn/DAIR-V2X/index.html) |
-| **V2I** | V2X-Seq | 2023 | CVPR | L, C | Real | 3DOT, TP | [Link](https://github.com/AIR-THU/DAIR-V2X-Seq) |
-| **V2I** | HoloVIC | 2024 | CVPR | L, C | Real | 3DOD, MOT | [Link](https://holovic.net) |
-| **V2I** | OTVIC | 2024 | IROS | L, C | Real | 3DOD | [Link](https://sites.google.com/view/otvic) |
-| **V2I** | DAIR-V2XReid | 2024 | TITS | L, C | Real | 3DOD, Re-ID | [Link](https://github.com/Niuyaqing/DAIR-V2XReid) |
-| **V2I** | TUMTraf V2X | 2024 | CVPR | L, C | Real | 3DOD, MOT | [Link](https://tum-traffic-dataset.github.io/tumtraf-v2x/) |
-| **V2I** | V2X-Radar | 2024 | arxiv | L, C, R | Real | 3DOD | [Link](http://openmpd.com/column/V2X-Radar) |
-| **V2X** | V2X-Sim | 2022 | RA-L | L, C | Sim | 3DOD, MOT, SS | [Link](https://ai4ce.github.io/V2X-Sim/download.html) |
-| **V2X** | V2XSet | 2022 | ECCV | L, C | Sim | 3DOD | [Link](https://paperswithcode.com/dataset/v2xset) |
-| **V2X** | DOLPHINS | 2022 | ACCV | L, C | Sim | 2DOD, 3DOD | [Link](https://dolphins-dataset.net/) |
-| **V2X** | DeepAccident | 2024 | AAAI | L, C | Sim | 3DOD, MOT, SS, TP | [Link](https://deepaccident.github.io/) |
-| **V2X** | V2X-Real | 2024 | ECCV | L, C | Real | 3DOD | [Link](https://mobility-lab.seas.ucla.edu/v2x-real) |
-| **V2X** | Multi-V2X | 2024 | arxiv | L, C | Sim | 3DOD, MOT | [Link](http://github.com/RadetzkyLi/Multi-V2X) |
-| **V2X** | Adver-City | 2024 | arxiv | L, C | Sim | 3DOD, MOT, SS | [Link](https://labs.cs.queensu.ca/quarrg/datasets/adver-city/) |
-| **V2X** | DAIR-V2X-Traj | 2024 | NIPS | L, C | Real | MF | [Link](https://github.com/AIR-THU/V2X-Graph) |
-| **V2X** | WHALES | 2024 | arxiv | L, C | Sim | 3DOD | [Link](https://github.com/chensiweiTHU/WHALES) |
-| **V2X** | V2X-R | 2024 | arxiv | L, C, R | Sim | 3DOD | [Link](https://github.com/ylwhxht/V2X-R) |
-| **V2X** | V2XPnP-Seq | 2024 | arxiv | L, C | Real | Perception and Prediction | [Link](https://mobility-lab.seas.ucla.edu/v2xpnp/) |
-| **V2X** | Mixed Signals | 2025 | arxiv | L | Real | 3DOD | [Link](https://mixedsignalsdataset.cs.cornell.edu/) |
-| **V2X** | SCOPE | 2024 | arxiv | C, L | Sim | 2DOD, 3DOD, SS, S2R | [Link](https://ekut-es.github.io/scope) |
-| **I2I** | Rcooper | 2024 | CVPR | C, L | Real | 3DOD, MOT | [Link](https://github.com/AIR-THU/DAIR-Rcooper) |
-| **I2I** | InScope | 2024 | arxiv | L | Real | 3DOD, MOT | [Link](https://github.com/xf-zh/InScope) |
+| **Infra** | Ko-PER | 2014 | ITSC | C, L | Real | 3DOD, MOT | [download](https://www.uni-ulm.de/in/mrm/forschung/datensaetze.html) |
+| **Infra** | CityFlow | 2019 | CVPR | C | Real | MTSCT/MTMCT, ReID | [download](https://cityflow-project.github.io/) |
+| **Infra** | INTERACTION | 2019 | IROS | C, L | Real | 2DOD, TP | [download](https://interaction-dataset.com/) |
+| **Infra** | A9-Dataset | 2022 | IV | C, L | Real | 3DOD | [download](https://a9-dataset.com/) |
+| **Infra** | IPS300+ | 2022 | ICRA | C, L | Real | 2DOD, 3DOD | [download](http://www.openmpd.com/column/IPS300) |
+| **Infra** | Rope3D | 2022 | CVPR | C, L | Real | 2DOD, 3DOD | [download](https://thudair.baai.ac.cn/rope) |
+| **Infra** | LUMPI | 2022 | IV | C, L | Real | 3DOD | [download](https://data.uni-hannover.de/cs_CZ/dataset/lumpi) |
+| **Infra** | TUMTraf-I | 2023 | ITSC | C, L | Real | 3DOD | [download](https://innovation-mobility.com/en/project-providentia/a9-dataset/) |
+| **Infra** | RoScenes | 2024 | ECCV | C | Real | 3DOD | [download](https://roscenes.github.io./) |
+| **Infra** | H-V2X | 2024 | ECCV | C, R | Real | BEV Det, MOT, TP | [download](https://pan.quark.cn/s/86d19da10d18) |
+| **V2V** | COMAP | 2021 | ISPRS | L, C | Sim | 3DOD, SS | [download](https://demuc.de/colmap/) |
+| **V2V** | CODD | 2021 | RA-L | L | Sim | Registration | [download](https://github.com/eduardohenriquearnold/fastreg) |
+| **V2V** | OPV2V | 2022 | ICRA | C, L, R | Sim | 3DOD | [download](https://mobility-lab.seas.ucla.edu/opv2v/) |
+| **V2V** | OPV2V+ | 2023 | CVPR | C, L, R | Sim | 3DOD | [download](https://siheng-chen.github.io/dataset/CoPerception+/) |
+| **V2V** | V2V4Real | 2023 | CVPR | L, C | Real | 3DOD, MOT, S2R | [download](https://mobility-lab.seas.ucla.edu/v2v4real/) |
+| **V2V** | LUCOOP | 2023 | IV | L | Real | 3DOD | [download](https://data.uni-hannover.de/vault/icsens/axmann/lucoop-leibniz-university-cooperative-perception-and-urban-navigation-dataset/) |
+| **V2V** | MARS | 2024 | CVPR | L, C | Real | VPR, NR | [download](https://ai4ce.github.io/MARS/) |
+| **V2V** | OPV2V-H | 2024 | ICLR | C, L, R | Sim | 3DOD | [download](https://github.com/yifanlu0227/HEAL) |
+| **V2V** | V2V-QA | 2025 | arXiv | L, C | Real | 3DOD, PQA | [download](https://eddyhkchiu.github.io/v2vllm.github.io/) |
+| **V2V** | CP-UAV | 2022 | NIPS | L, C | Sim | 3DOD | [download](https://siheng-chen.github.io/dataset/coperception-uav/) |
+| **V2I** | CoopInf | 2020 | TITS | L, C | Sim | 3DOD | [download](https://github.com/eduardohenriquearnold/coop-3dod-infra?tab=readme-ov-file) |
+| **V2I** | DAIR-V2X-C | 2022 | CVPR | L, C | Real | 3DOD | [download](https://air.tsinghua.edu.cn/DAIR-V2X/index.html) |
+| **V2I** | V2X-Seq | 2023 | CVPR | L, C | Real | 3DOT, TP | [download](https://github.com/AIR-THU/DAIR-V2X-Seq) |
+| **V2I** | HoloVIC | 2024 | CVPR | L, C | Real | 3DOD, MOT | [download](https://holovic.net) |
+| **V2I** | OTVIC | 2024 | IROS | L, C | Real | 3DOD | [download](https://sites.google.com/view/otvic) |
+| **V2I** | DAIR-V2XReid | 2024 | TITS | L, C | Real | 3DOD, Re-ID | [download](https://github.com/Niuyaqing/DAIR-V2XReid) |
+| **V2I** | TUMTraf V2X | 2024 | CVPR | L, C | Real | 3DOD, MOT | [download](https://tum-traffic-dataset.github.io/tumtraf-v2x/) |
+| **V2I** | V2X-Radar | 2024 | arxiv | L, C, R | Real | 3DOD | [download](http://openmpd.com/column/V2X-Radar) |
+| **V2X** | V2X-Sim | 2022 | RA-L | L, C | Sim | 3DOD, MOT, SS | [download](https://ai4ce.github.io/V2X-Sim/download.html) |
+| **V2X** | V2XSet | 2022 | ECCV | L, C | Sim | 3DOD | [download](https://paperswithcode.com/dataset/v2xset) |
+| **V2X** | DOLPHINS | 2022 | ACCV | L, C | Sim | 2DOD, 3DOD | [download](https://dolphins-dataset.net/) |
+| **V2X** | DeepAccident | 2024 | AAAI | L, C | Sim | 3DOD, MOT, SS, TP | [download](https://deepaccident.github.io/) |
+| **V2X** | V2X-Real | 2024 | ECCV | L, C | Real | 3DOD | [download](https://mobility-lab.seas.ucla.edu/v2x-real) |
+| **V2X** | Multi-V2X | 2024 | arxiv | L, C | Sim | 3DOD, MOT | [download](http://github.com/RadetzkyLi/Multi-V2X) |
+| **V2X** | Adver-City | 2024 | arxiv | L, C | Sim | 3DOD, MOT, SS | [download](https://labs.cs.queensu.ca/quarrg/datasets/adver-city/) |
+| **V2X** | DAIR-V2X-Traj | 2024 | NIPS | L, C | Real | MF | [download](https://github.com/AIR-THU/V2X-Graph) |
+| **V2X** | WHALES | 2024 | arxiv | L, C | Sim | 3DOD | [download](https://github.com/chensiweiTHU/WHALES) |
+| **V2X** | V2X-R | 2024 | arxiv | L, C, R | Sim | 3DOD | [download](https://github.com/ylwhxht/V2X-R) |
+| **V2X** | V2XPnP-Seq | 2024 | arxiv | L, C | Real | Perception and Prediction | [download](https://mobility-lab.seas.ucla.edu/v2xpnp/) |
+| **V2X** | Mixed Signals | 2025 | arxiv | L | Real | 3DOD | [download](https://mixedsignalsdataset.cs.cornell.edu/) |
+| **V2X** | SCOPE | 2024 | arxiv | C, L | Sim | 2DOD, 3DOD, SS, S2R | [download](https://ekut-es.github.io/scope) |
+| **I2I** | Rcooper | 2024 | CVPR | C, L | Real | 3DOD, MOT | [download](https://github.com/AIR-THU/DAIR-Rcooper) |
+| **I2I** | InScope | 2024 | arxiv | L | Real | 3DOD, MOT | [download](https://github.com/xf-zh/InScope) |
 
 Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
 
