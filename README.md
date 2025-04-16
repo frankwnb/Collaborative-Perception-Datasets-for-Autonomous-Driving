@@ -9,15 +9,8 @@ First, the repository introduces commonly used **autonomous driving simulation t
 
 
 ### :link:Jump to:
-- [Simulator](#user-content-simulator)
-- [Roadside Datasets](#user-content-roadside-datasets)
-- [V2V Datasets](#user-content-v2v-datasets)
-- [V2I Datasets](#user-content-v2i-datasets)
-- [V2X Datasets](#user-content-v2x-datasets)
-- [I2I Datasets](#user-content-i2i-datasets)
-- [Methods](#user-content-methods)
-
-
+- ### [Method and Framework](#method-and-framework)
+- ### [Dataset and Simulator](#dataset-and-simulator)
 
 
 
@@ -859,6 +852,15 @@ The paper introduces the InScope dataset, aiming to address the issue of occlusi
 - **AutoCastSim** (COOPERNAUT: End-to-End Driving with Cooperative Perception for Networked Vehicles) [[paper](https://arxiv.org/abs/2205.02222)] [[code](https://github.com/hangqiu/AutoCastSim)] [[project](https://utexas.app.box.com/v/coopernaut-dataset)]
 - **Mono3DVLT-V2X** (Mono3DVLT: Monocular-Video-Based 3D Visual Language Tracking) [~~paper~~] [~~code~~] [~~project~~]
 - **RCP-Bench** (RCP-Bench: Benchmarking Robustness for Collaborative Perception Under Diverse Corruptions) [~~paper~~] [~~code~~] [~~project~~]
+
+
+## :bookmark:Method and Framework
+
+This is the content of the "Method and Framework" section.
+
+## :bookmark:Dataset and Simulator
+
+This is the content of the "Dataset and Simulator" section.
 
 
 
