@@ -15,8 +15,7 @@ First, the repository introduces commonly used **autonomous driving simulation t
 - ### [[I2I Datasets]()]
 - ### [[Methods]()]
 
-
-## Simulator - Simulators for Collaborative Perception (CP) Research
+## :bookmark:Simulator - Simulators for Collaborative Perception (CP) Research
 
 **Simulators** play a critical role in **Collaborative Perception (CP)** research for **Autonomous Driving (AD)**, offering cost-effective, safe, and annotation-efficient alternatives to real-world data collection. They enable the generation of **accurate object attributes** and provide **automated annotations**, crucial for training and evaluating perception algorithms.
 
@@ -86,7 +85,7 @@ Cooperative Driving Automation (CDA) is gaining attention but faces significant 
    [[paper]()] [~~code~~] [~~project~~]
 
    
-## Roadside Datasets
+## :bookmark:Roadside Datasets
 
 ### Table
 
@@ -251,7 +250,7 @@ The paper introduces H-V2X, a large-scale dataset for highway roadside perceptio
   - **New Benchmark Methods**: The paper presents innovative methods incorporating HDMap data for improved BEV detection and trajectory prediction in highway scenarios.
 
 
-## V2V Datasets
+## :bookmark:V2V Datasets
 
 - **V2V Datasets**: Vehicle-to-vehicle datasets capture collaboration between vehicles, facilitating research on cooperative perception under occlusion, sparse observations, or dynamic driving scenarios.
 
@@ -272,6 +271,7 @@ The paper introduces H-V2X, a large-scale dataset for highway roadside perceptio
 | OPV2V-H | 2024 | ICLR | C, L, R | Sim | 3DOD | [download](https://github.com/yifanlu0227/HEAL) |
 | V2V-QA | 2025 | arXiv | L, C | Real | 3DOD, PQA | [download](https://eddyhkchiu.github.io/v2vllm.github.io/) |
 | CP-UAV | 2022 | NIPS | L, C | Sim | 3DOD | [download](https://siheng-chen.github.io/dataset/coperception-uav/) |
+
 Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
 
 
@@ -437,7 +437,7 @@ Collaborative perception allows multiple agents to share complementary informati
   - **Real-World and Simulation Scenarios**: Demonstrates the framework’s robustness in both real-world and simulation environments, with multi-agent setups including cars and drones equipped with cameras and LiDAR sensors.
 
 
-## V2I Datasets
+## :bookmark:V2I Datasets
 
 - **V2I Datasets**: These datasets involve communication between vehicles and infrastructure, supporting cooperative tasks like object detection, tracking, and decision-making in connected environments.
 
@@ -584,14 +584,13 @@ The V2X-Radar dataset was developed to address the limitations in existing coope
   - **Extensive Benchmarking**: The dataset includes benchmarks for recent perception algorithms across these sub-datasets, supporting a wide range of research in cooperative perception.
 
 
-## V2X Datasets
+## :bookmark:V2X Datasets
 - **V2X Datasets**: Covering vehicle-to-everything communication, these datasets integrate multiple agents such as vehicles, infrastructure, and other environmental elements like drones or pedestrians, enabling research in complex collaborative scenarios.
 
 ### Table
 
 | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
 |-------------|----------|-----------|-------------|------------|-----------|----------|
-
 | V2X-Sim | 2022 | RA-L | L, C | Sim | 3DOD, MOT, SS | [download](https://ai4ce.github.io/V2X-Sim/download.html) |
 | V2XSet | 2022 | ECCV | L, C | Sim | 3DOD | [download](https://paperswithcode.com/dataset/v2xset) |
 | DOLPHINS | 2022 | ACCV | L, C | Sim | 2DOD, 3DOD | [download](https://dolphins-dataset.net/) |
@@ -605,13 +604,6 @@ The V2X-Radar dataset was developed to address the limitations in existing coope
 | V2XPnP-Seq | 2024 | arxiv | L, C | Real | Perception and Prediction | [download](https://mobility-lab.seas.ucla.edu/v2xpnp/) |
 | Mixed Signals | 2025 | arxiv | L | Real | 3DOD | [download](https://mixedsignalsdataset.cs.cornell.edu/) |
 | SCOPE | 2024 | arxiv | C, L | Sim | 2DOD, 3DOD, SS, S2R | [download](https://ekut-es.github.io/scope) |
-
-
-
-
-
-
-
 
 Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
 
@@ -812,7 +804,7 @@ The paper addresses the challenges of applying Vehicle-to-Everything (V2X) coope
   - **Comprehensive Benchmarking**: Conducts extensive benchmarks to assess multi-class, multi-agent V2X cooperative perception performance, highlighting the system's effectiveness in various collaboration modes (V2V, V2I, and I2I).
 
 
-## I2I Datasets
+## :bookmark:I2I Datasets
 - **I2I Datasets**: Focused on infrastructure-to-infrastructure collaboration, these datasets support research in scenarios with overlapping sensor coverage or distributed sensor fusion across intersections.
 
 ### Table
