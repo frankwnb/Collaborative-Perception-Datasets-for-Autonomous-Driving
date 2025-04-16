@@ -16,7 +16,6 @@ First, the repository introduces commonly used **autonomous driving simulation t
 - [I2I Datasets](#i2i-datasets-anchor)
 - [Methods](#methods-anchor)
 
----
 
 
 
@@ -24,7 +23,9 @@ First, the repository introduces commonly used **autonomous driving simulation t
 
 
 
-## :bookmark:Simulator 
+
+## :bookmark:Simulator  <a id="simulator-anchor"></a>
+
 
 - Simulators for Collaborative Perception (CP) Research
 
@@ -96,8 +97,7 @@ Cooperative Driving Automation (CDA) is gaining attention but faces significant 
    [[paper]()] [~~code~~] [~~project~~]
 
    
-## :bookmark:Roadside Datasets
-
+## :bookmark:Roadside Datasets  <a id="roadside-datasets-anchor"></a>
 ### Table
 
 | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
@@ -261,36 +261,10 @@ The paper introduces H-V2X, a large-scale dataset for highway roadside perceptio
   - **New Benchmark Methods**: The paper presents innovative methods incorporating HDMap data for improved BEV detection and trajectory prediction in highway scenarios.
 
 
-## :bookmark:Simulator
-<a id="simulator-anchor"></a>
-（此处放置模拟器内容...）
-
-## :bookmark:Roadside Datasets
-<a id="roadside-datasets-anchor"></a>
-（此处放置路边数据集内容...）
-
-## :bookmark:V2V Datasets
-<a id="v2v-datasets-anchor"></a>
-（此处放置车对车数据集内容...）
-
-## :bookmark:V2I Datasets
-<a id="v2i-datasets-anchor"></a>
-（此处放置车对基础设施数据集内容...）
-
-## :bookmark:V2X Datasets
-<a id="v2x-datasets-anchor"></a>
-（此处放置车对一切数据集内容...）
-
-## :bookmark:I2I Datasets
-<a id="i2i-datasets-anchor"></a>
-（此处放置基础设施间数据集内容...）
-
-## :bookmark:Methods
-<a id="methods-anchor"></a>
-（此处放置方法论内容...）
 
 
-## :bookmark:V2V Datasets
+## :bookmark:V2V Datasets <a id="v2v-datasets-anchor"></a>
+
 
 - **V2V Datasets**: Vehicle-to-vehicle datasets capture collaboration between vehicles, facilitating research on cooperative perception under occlusion, sparse observations, or dynamic driving scenarios.
 
@@ -478,6 +452,7 @@ Collaborative perception allows multiple agents to share complementary informati
 
 
 ## :bookmark:V2I Datasets
+## :bookmark:V2I Datasets <a id="v2i-datasets-anchor"></a>
 
 - **V2I Datasets**: These datasets involve communication between vehicles and infrastructure, supporting cooperative tasks like object detection, tracking, and decision-making in connected environments.
 
@@ -624,8 +599,8 @@ The V2X-Radar dataset was developed to address the limitations in existing coope
   - **Extensive Benchmarking**: The dataset includes benchmarks for recent perception algorithms across these sub-datasets, supporting a wide range of research in cooperative perception.
 
 
+## :bookmark:V2X Datasets <a id="v2x-datasets-anchor"></a>
 
-## :bookmark:V2X Datasets
 - **V2X Datasets**: Covering vehicle-to-everything communication, these datasets integrate multiple agents such as vehicles, infrastructure, and other environmental elements like drones or pedestrians, enabling research in complex collaborative scenarios.
 
 ### Table
@@ -844,8 +819,8 @@ The paper addresses the challenges of applying Vehicle-to-Everything (V2X) coope
   - **Real-Time Evaluation**: Supports online evaluations, accounting for real-world challenges such as bandwidth limitations, latency, and asynchronous message arrival.
   - **Comprehensive Benchmarking**: Conducts extensive benchmarks to assess multi-class, multi-agent V2X cooperative perception performance, highlighting the system's effectiveness in various collaboration modes (V2V, V2I, and I2I).
 
+## :bookmark:I2I Datasets <a id="i2i-datasets-anchor"></a>
 
-## :bookmark:I2I Datasets
 - **I2I Datasets**: Focused on infrastructure-to-infrastructure collaboration, these datasets support research in scenarios with overlapping sensor coverage or distributed sensor fusion across intersections.
 
 ### Table
@@ -894,13 +869,10 @@ The paper introduces the InScope dataset, aiming to address the issue of occlusi
 - **RCP-Bench** (RCP-Bench: Benchmarking Robustness for Collaborative Perception Under Diverse Corruptions) [~~paper~~] [~~code~~] [~~project~~]
 
 
-## Method 
 
 
-## :bookmark:Method and Framework
+## :bookmark:Methods <a id="methods-anchor"></a>
 
-
-## :bookmark:Dataset and Simulator
 
 
 
