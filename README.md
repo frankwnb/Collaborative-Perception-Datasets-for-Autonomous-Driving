@@ -82,7 +82,6 @@ Cooperative Driving Automation (CDA) is gaining attention but faces significant 
   - **Platooning Example**: The paper demonstrates the capabilities of OpenCDA through a platooning implementation, showcasing its flexibility and effectiveness in CDA research.
 
 
-
    [[paper]()] [[code]()] [[project]()]
    [[paper]()] [~~code~~] [~~project~~]
 
@@ -95,6 +94,8 @@ Cooperative Driving Automation (CDA) is gaining attention but faces significant 
 |-------------|----------|-----------|-------------|------------|-----------|----------|
 | Ko-PER | 2014 | ITSC | C, L | Real | 3DOD, MOT | [download](https://www.uni-ulm.de/in/mrm/forschung/datensaetze.html) |
 | CityFlow | 2019 | CVPR | C | Real | MTSCT/MTMCT, ReID | [download](https://cityflow-project.github.io/) |
+| BAAI-VANJEE  | 2021     | arXiv     | C, L        | Real       | 2D/3D OD   | [Link](https://paperswithcode.com/dataset/baai-vanjee) |
+| WIBAM        | 2021     | arXiv     | C           | Real       | 2D/3D OD   | [Link](https://github.com/MatthewHowe/WIBAM) |
 | INTERACTION | 2019 | IROS | C, L | Real | 2DOD, TP | [download](https://interaction-dataset.com/) |
 | A9-Dataset | 2022 | IV | C, L | Real | 3DOD | [download](https://a9-dataset.com/) |
 | IPS300+ | 2022 | ICRA | C, L | Real | 2DOD, 3DOD | [download](http://www.openmpd.com/column/IPS300) |
@@ -103,6 +104,7 @@ Cooperative Driving Automation (CDA) is gaining attention but faces significant 
 | TUMTraf-I | 2023 | ITSC | C, L | Real | 3DOD | [download](https://innovation-mobility.com/en/project-providentia/a9-dataset/) |
 | RoScenes | 2024 | ECCV | C | Real | 3DOD | [download](https://roscenes.github.io./) |
 | H-V2X | 2024 | ECCV | C, R | Real | BEV Det, MOT, TP | [download](https://pan.quark.cn/s/86d19da10d18) |
+
 
 Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
 
@@ -132,6 +134,22 @@ The CityFlow dataset addresses the challenges of tracking vehicles across large 
   - **Support for MTMC Tracking and ReID**: CityFlow supports both MTMC tracking and image-based vehicle ReID, providing a benchmark for these tasks.
   - **Real-World Challenges**: The dataset covers diverse environments and traffic conditions, incorporating issues such as motion blur and overlapping camera views.
   - **Evaluation Server**: An online platform for continuous performance comparison, providing a fair and transparent benchmarking process.
+
+### BAAI-VANJEE Roadside Dataset: Towards the Connected Automated Vehicle Highway Technologies in Challenging Environments of China
+
+- **Background and Motivation**  
+This paper introduces the BAAI-VANJEE dataset, aimed at enhancing roadside perception for Connected Automated Vehicle Highway (CAVH) technologies. The dataset was created in response to the limitations of vehicle-based technologies that are difficult to scale. It provides high-quality LiDAR and RGB data collected from roadside sensors, addressing the need for datasets that can help improve detection tasks, including 2D/3D object detection and multi-sensor fusion in complex traffic environments.
+
+- **Key Contributions**  
+  - **Challenging Roadside Dataset**: The dataset includes 2500 frames of LiDAR data and 5000 frames of RGB images, with annotations for 12 object classes.
+  - **High-Quality Annotations**: 74K 3D object annotations and 105K 2D object annotations, collected under varying weather conditions (sunny, cloudy, rainy) and times of day (day, night).
+  - **Real-World Application**: Focuses on complex urban intersections and highway scenes, providing real-world data for CAVH research.
+  - **Three Core Tasks**: Supports tasks including 2D object detection, 3D object detection, and multi-sensor fusion.
+  - **Diverse Scenarios**: Includes data from diverse traffic conditions, providing a more comprehensive view of roadside perception.
+  - **Public Availability**: The dataset is available online to support research in intelligent transportation and big data-driven innovation.
+
+### WIBAM  Weakly Supervised Training of Monocular 3D Object Detectors Using Wide Baseline Multi-view Traffic Camera Data
+
 
 ### INTERACTION: An INTERnational, Adversarial and Cooperative moTION Dataset in Interactive Driving Scenarios with Semantic Maps [[paper]()] [[code]()] [[project]()]
 
@@ -233,7 +251,6 @@ The paper introduces H-V2X, a large-scale dataset for highway roadside perceptio
   - **New Benchmark Methods**: The paper presents innovative methods incorporating HDMap data for improved BEV detection and trajectory prediction in highway scenarios.
 
 
-
 ## V2V Datasets
 
 - **V2V Datasets**: Vehicle-to-vehicle datasets capture collaboration between vehicles, facilitating research on cooperative perception under occlusion, sparse observations, or dynamic driving scenarios.
@@ -242,18 +259,45 @@ The paper introduces H-V2X, a large-scale dataset for highway roadside perceptio
 
 | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
 |-------------|----------|-----------|-------------|------------|-----------|----------|
+| T & J        | 2019     | ICDCS     | C, L, R     | Real       | 3D OD      | -            |
+| V2V-Sim      | 2020     | ECCV      | L           | Sim        | 3D OD      | -            |
 | COMAP | 2021 | ISPRS | L, C | Sim | 3DOD, SS | [download](https://demuc.de/colmap/) |
 | CODD | 2021 | RA-L | L | Sim | Registration | [download](https://github.com/eduardohenriquearnold/fastreg) |
 | OPV2V | 2022 | ICRA | C, L, R | Sim | 3DOD | [download](https://mobility-lab.seas.ucla.edu/opv2v/) |
 | OPV2V+ | 2023 | CVPR | C, L, R | Sim | 3DOD | [download](https://siheng-chen.github.io/dataset/CoPerception+/) |
+| IRV2V        | 2023     | NIPS      | L, C        | Sim        | 3D OD      | [Link](https://paperswithcode.com/dataset/irv2v) |
 | V2V4Real | 2023 | CVPR | L, C | Real | 3DOD, MOT, S2R | [download](https://mobility-lab.seas.ucla.edu/v2v4real/) |
 | LUCOOP | 2023 | IV | L | Real | 3DOD | [download](https://data.uni-hannover.de/vault/icsens/axmann/lucoop-leibniz-university-cooperative-perception-and-urban-navigation-dataset/) |
 | MARS | 2024 | CVPR | L, C | Real | VPR, NR | [download](https://ai4ce.github.io/MARS/) |
 | OPV2V-H | 2024 | ICLR | C, L, R | Sim | 3DOD | [download](https://github.com/yifanlu0227/HEAL) |
 | V2V-QA | 2025 | arXiv | L, C | Real | 3DOD, PQA | [download](https://eddyhkchiu.github.io/v2vllm.github.io/) |
 | CP-UAV | 2022 | NIPS | L, C | Sim | 3DOD | [download](https://siheng-chen.github.io/dataset/coperception-uav/) |
-
 Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
+
+
+### **T & J**  Cooper: Cooperative Perception for Connected Autonomous Vehicles Based on 3D Point Clouds
+
+- **Background and Motivation**  
+The paper introduces the Cooper system, aimed at enhancing the detection accuracy of autonomous vehicles through cooperative perception. Autonomous vehicles often suffer from sensor limitations, leading to potential detection failures. By enabling connected vehicles to share sensor data, particularly 3D LiDAR point clouds, the system aims to extend sensing areas, improve detection accuracy, and enhance safety in dynamic driving environments.
+
+- **Key Contributions**  
+  - **Sparse Point-Cloud Object Detection (SPOD)**: Introduces the SPOD method for detecting objects in sparse LiDAR point clouds, which improves detection even in low-density data.
+  - **Cooperative Perception System**: Demonstrates how multiple connected autonomous vehicles can share LiDAR data, merging point clouds from different vehicles to enhance object detection.
+  - **Improved Detection Performance**: Shows that cooperative perception expands the sensing area, improves detection accuracy, and complements traditional object detection methods.
+  - **Data Transmission Feasibility**: Demonstrates the feasibility of transmitting LiDAR point clouds for cooperative perception using existing vehicular network technologies, maintaining efficiency even with limited bandwidth.
+  - **Evaluation on Real-World Datasets**: Evaluates the Cooper system on the KITTI and T&J datasets, showing significant improvements in detection performance, especially for objects that were previously undetected by individual vehicles.
+
+
+### **V2V-Sim**  V2VNet: Vehicle-to-Vehicle Communication for Joint Perception and Prediction
+
+- **Background and Motivation**  
+This paper explores the use of Vehicle-to-Vehicle (V2V) communication to enhance the perception and motion forecasting of self-driving vehicles (SDVs). The key motivation is the challenge that SDVs face in detecting and forecasting the behavior of objects that are occluded or far away, which can be critical in safety-sensitive situations. By leveraging information shared from nearby vehicles, SDVs can overcome these limitations and improve overall safety and efficiency.
+
+- **Key Contributions**  
+  - **V2V Communication for Perception and Prediction**: Introduces a novel V2V approach, V2VNet, which integrates shared information from multiple vehicles to improve detection and motion forecasting accuracy.
+  - **Compression of Intermediate Representations**: The model transmits compressed intermediate feature maps from the perception and prediction (P&P) neural network, balancing accuracy and bandwidth efficiency.
+  - **Graph Neural Network (GNN)**: Utilizes a spatially aware GNN to aggregate information received from other SDVs, allowing intelligent fusion of data from different time points and viewpoints.
+  - **V2V-Sim Dataset**: Proposes the creation of a new dataset, V2V-Sim, that simulates the real-world conditions where multiple SDVs share information, demonstrating the effectiveness of the V2VNet approach.
 
 ### COMAP: A Synthetic Dataset for Collective Multi-Agent Perception of Autonomous Driving  [[paper]()] [[code]()] [[project]()]
 
@@ -277,7 +321,8 @@ The paper addresses the challenges faced in registering point clouds that partia
   - **Speed and Efficiency**: The proposed approach is designed to be computationally efficient, making it suitable for real-time applications in dynamic environments.
   - **Experimental Validation**: Extensive experiments demonstrate that the method outperforms traditional registration techniques in both accuracy and robustness, even in the presence of noise and partial overlap.
 
-### OPV2V: An Open Benchmark Dataset and Fusion Pipeline for Perception with Vehicle-to-Vehicle Communication  [[paper]()] [[code]()] [[project]()]
+
+### OPV2V: An Open Benchmark Dataset and Fusion Pipeline for Perception with Vehicle-to-Vehicle Communication   [[paper](https://arxiv.org/abs/2109.07644)] [[code](https://github.com/DerrickXuNu/OpenCOOD)] [[project](https://mobility-lab.seas.ucla.edu/opv2v)]
 
 - **Background and Motivation**  
 Vehicle-to-Vehicle (V2V) communication offers the potential to improve perception performance in autonomous driving, but there is a lack of large-scale open datasets for V2V perception. This gap hampers the development and benchmarking of V2V algorithms, motivating the creation of the OPV2V dataset, the first large-scale open dataset for V2V perception.
@@ -288,7 +333,9 @@ Vehicle-to-Vehicle (V2V) communication offers the potential to improve perceptio
   - **Proposed Attentive Intermediate Fusion Pipeline**: A new pipeline is proposed for aggregating information from multiple connected vehicles, which performs well even under high compression rates, improving the effectiveness of V2V communication.
   - **Open-source Availability**: The dataset, benchmark models, and code are publicly available, encouraging further research in V2V perception.
 
-### Collaboration Helps Camera Overtake LiDAR in 3D Detection  [[paper]()] [[code]()] [[project]()]
+
+### **OPV2V+**  Collaboration Helps Camera Overtake LiDAR in 3D Detection   [[paper](https://arxiv.org/abs/2303.13560)] [[code](https://github.com/MediaBrain-SJTU/CoCa3D)] [[project](https://siheng-chen.github.io/dataset/CoPerception+)]
+### **CoPerception-UAV+**  Collaboration Helps Camera Overtake LiDAR in 3D Detection   [[paper](https://arxiv.org/abs/2303.13560)] [[code](https://github.com/MediaBrain-SJTU/CoCa3D)] [[project](https://siheng-chen.github.io/dataset/CoPerception+)]
 
 - **Background and Motivation**  
 The paper addresses the challenge of improving camera-only 3D detection, which typically struggles with depth estimation compared to LiDAR. Traditional camera-based 3D detection has significant limitations, particularly in depth estimation, which is critical for accurate 3D object localization in autonomous driving. The authors propose a solution based on multi-agent collaboration to overcome these challenges.
@@ -300,7 +347,20 @@ The paper addresses the challenge of improving camera-only 3D detection, which t
   - **Efficient Communication**: The framework optimizes communication between agents by selecting and transmitting only the most informative cues, improving efficiency.
   - **Dataset Expansion**: The authors expanded existing datasets (OPV2V+, DAIR-V2X, and CoPerception-UAVs+) to include more collaborative agents and demonstrated that the collaborative camera system outperforms LiDAR in some cases, achieving state-of-the-art performance on multiple benchmarks.
 
-### V2V4Real: A Real-World Large-Scale Dataset for Vehicle-to-Vehicle Cooperative Perception  [[paper]()] [[code]()] [[project]()]
+###  **IRV2V**  Asynchrony-Robust Collaborative Perception via Bird’s Eye View Flow  [[paper&review](https://openreview.net/forum?id=UHIDdtxmVS)] [~~code~~] [~~project~~]
+
+- **Background and Motivation**  
+The paper addresses the issue of temporal asynchrony in collaborative perception systems. Asynchronous communication among vehicles due to network delays, interruptions, or misalignments can cause significant issues in multi-agent collaboration. The paper proposes CoBEVFlow, a system designed to handle these asynchronies by using a bird’s-eye view (BEV) flow map to align asynchronous messages, ensuring more reliable collaborative perception in real-world autonomous driving scenarios.
+
+- **Key Contributions**  
+  - **CoBEVFlow Framework**: Introduces CoBEVFlow, an asynchrony-robust collaborative perception system that compensates for temporal misalignments in data exchanges.
+  - **BEV Flow**: Proposes BEV flow to model and compensate for motion in the scene, allowing asynchronous features to be realigned accurately without generating new features, avoiding extra noise.
+  - **IRV2V Dataset**: Creates the IRV2V dataset, the first synthetic dataset with various temporal asynchronies, simulating real-world scenarios to test the effectiveness of the proposed approach.
+  - **Performance Validation**: Demonstrates that CoBEVFlow consistently outperforms existing methods under different latency conditions, improving detection performance by up to 30.3% compared to other state-of-the-art methods.
+  - **Low Communication Cost**: CoBEVFlow is communication-efficient, transmitting only sparse features and ROI sets, reducing the overall communication bandwidth required for collaborative perception.
+
+
+### V2V4Real: A Real-World Large-Scale Dataset for Vehicle-to-Vehicle Cooperative Perception [[paper](https://arxiv.org/abs/2303.07601)] [[code](https://github.com/ucla-mobility/V2V4Real)] [[project](https://mobility-lab.seas.ucla.edu/v2v4real)]
 
 - **Background and Motivation**  
 The paper introduces V2V4Real, a real-world large-scale dataset designed to address the limitations of single-vehicle perception in autonomous driving. The lack of real-world datasets for Vehicle-to-Vehicle (V2V) cooperative perception has hindered progress in this area. This dataset aims to enhance the capabilities of V2V cooperative perception by providing multimodal data in real-world scenarios.
@@ -325,7 +385,9 @@ Recent autonomous driving datasets mainly involve data collected from a single v
   - **Object Detection Annotations**: The dataset provides 3D bounding box annotations for static and dynamic vehicles, pedestrians, and other traffic participants.
   - **Large-Scale Data**: It includes over 54,000 LiDAR frames, 700,000 IMU measurements, and more than 2.5 hours of GNSS data.
 
-### Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset  [[paper]()] [[code]()] [[project]()]
+
+
+### **Open Mars Dataset**  Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset   [[code](https://github.com/ai4ce/MARS)] [[paper](https://arxiv.org/abs/2406.09383)] [[project](https://ai4ce.github.io/MARS)]
 
 - **Background and Motivation**  
 The paper introduces the MARS dataset, aimed at addressing the gap in existing datasets by incorporating multiagent and multitraversal elements. Traditional autonomous driving datasets often lack collaborative and repeated traversals, which limit advancements in perception, prediction, and planning. MARS was developed to fill this gap, enabling richer research in multiagent systems and enhanced 3D scene understanding.
@@ -337,7 +399,8 @@ The paper introduces the MARS dataset, aimed at addressing the gap in existing d
   - **Research Opportunities**: MARS opens new avenues for research in multiagent collaborative perception, unsupervised learning, and multitraversal 3D reconstruction.
   - **Real-World Data**: The dataset was collected using May Mobility's autonomous vehicles, ensuring high scalability and diversity across locations.
 
-### An Extensible Framework for Open Heterogeneous Collaborative Perception  [[paper]()] [[code]()] [[project]()]
+
+###  **OPV2V-H** An Extensible Framework for Open Heterogeneous Collaborative Perception  [[paper&review](https://openreview.net/forum?id=KkrDUGIASk)] [[code](https://github.com/yifanlu0227/HEAL)] [[project](https://huggingface.co/datasets/yifanlu/OPV2V-H)]
 
 - **Background and Motivation**  
 Collaborative perception enhances the capabilities of individual agents by enabling data sharing to overcome perception limitations such as occlusion. However, existing models typically assume agents are homogeneous, while real-world scenarios often involve heterogeneous agents with different sensor modalities and models. This paper addresses the challenge of integrating new heterogeneous agents with minimal cost and high performance.
@@ -374,21 +437,6 @@ Collaborative perception allows multiple agents to share complementary informati
   - **Real-World and Simulation Scenarios**: Demonstrates the framework’s robustness in both real-world and simulation environments, with multi-agent setups including cars and drones equipped with cameras and LiDAR sensors.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## V2I Datasets
 
 - **V2I Datasets**: These datasets involve communication between vehicles and infrastructure, supporting cooperative tasks like object detection, tracking, and decision-making in connected environments.
@@ -398,18 +446,22 @@ Collaborative perception allows multiple agents to share complementary informati
 | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
 |-------------|----------|-----------|-------------|------------|-----------|----------|
 | CoopInf | 2020 | TITS | L, C | Sim | 3DOD | [download](https://github.com/eduardohenriquearnold/coop-3dod-infra?tab=readme-ov-file) |
+| CARTI        | 2022     | ITSC      | L           | Sim        | 3D OD      | -            |
 | DAIR-V2X-C | 2022 | CVPR | L, C | Real | 3DOD | [download](https://air.tsinghua.edu.cn/DAIR-V2X/index.html) |
 | V2X-Seq | 2023 | CVPR | L, C | Real | 3DOT, TP | [download](https://github.com/AIR-THU/DAIR-V2X-Seq) |
 | HoloVIC | 2024 | CVPR | L, C | Real | 3DOD, MOT | [download](https://holovic.net) |
 | OTVIC | 2024 | IROS | L, C | Real | 3DOD | [download](https://sites.google.com/view/otvic) |
 | DAIR-V2XReid | 2024 | TITS | L, C | Real | 3DOD, Re-ID | [download](https://github.com/Niuyaqing/DAIR-V2XReid) |
 | TUMTraf V2X | 2024 | CVPR | L, C | Real | 3DOD, MOT | [download](https://tum-traffic-dataset.github.io/tumtraf-v2x/) |
+| V2X-DSI      | 2024     | IV        | L, C        | Sim        | 3D OD      | -            |
 | V2X-Radar | 2024 | arxiv | L, C, R | Real | 3DOD | [download](http://openmpd.com/column/V2X-Radar) |
+
+
 
 Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
 
 
-### Cooperative Perception for 3D Object Detection in Driving Scenarios Using Infrastructure Sensors  [[paper]()] [[code]()] [[project]()]
+### **CoopInf**  Cooperative Perception for 3D Object Detection in Driving Scenarios Using Infrastructure Sensors  [[paper]()] [[code]()] [[project]()]
 
 - **Background and Motivation**  
 The paper addresses the challenge of 3D object detection in autonomous driving scenarios, particularly in complex environments like T-junctions and roundabouts. Traditional single-sensor systems face limitations such as occlusion and restricted field-of-view, hindering reliable detection. Cooperative perception using multiple spatially diverse infrastructure sensors provides an effective solution to mitigate these issues and improve detection performance.
@@ -421,7 +473,20 @@ The paper addresses the challenge of 3D object detection in autonomous driving s
   - **Impact of Sensor Configurations**: The study also evaluates how sensor number and positioning impact detection performance, offering practical insights for real-world deployment .
 
 
-### DAIR-V2X: A Large-Scale Dataset for Vehicle-Infrastructure Cooperative 3D Object Detection  [[paper]()] [[code]()] [[project]()]
+### **CARTI** PillarGrid: Deep Learning-Based Cooperative Perception for 3D Object Detection from Onboard-Roadside LiDAR
+
+- **Background and Motivation**  
+The paper introduces PillarGrid, a deep learning-based cooperative perception method for 3D object detection using both onboard and roadside LiDAR data. Traditional 3D object detection methods rely on single onboard LiDARs, which suffer from limitations in range and occlusion, especially in dense traffic. The motivation is to enhance detection accuracy and range by combining point cloud data from both vehicle-mounted and infrastructure-based sensors, improving detection performance in real-world scenarios.
+
+- **Key Contributions**  
+  - **PillarGrid Method**: Introduces a novel cooperative perception approach for 3D object detection that fuses data from onboard and roadside LiDAR sensors through deep learning.
+  - **Grid-wise Feature Fusion (GFF)**: Proposes GFF, a feature-level fusion technique that combines information from multiple sensors to improve detection accuracy and reduce occlusion effects.
+  - **Cooperative Preprocessing and Geo-Fencing**: Introduces cooperative preprocessing of point clouds and geo-fencing to align and process data from different sensors effectively.
+  - **CNN-based 3D Object Detection**: Uses a convolutional neural network (CNN) to detect and generate 3D bounding boxes for objects, improving detection of vehicles and pedestrians.
+  - **Dataset and Evaluation**: A new dataset, CARTI, was created using a cooperative perception platform for model training and evaluation, showing significant improvements over state-of-the-art methods in both accuracy and range.
+
+
+### DAIR-V2X: A Large-Scale Dataset for Vehicle-Infrastructure Cooperative 3D Object Detection  [[paper](https://arxiv.org/abs/2204.05575)] [[code](https://github.com/AIR-THU/DAIR-V2X)] [[project](https://thudair.baai.ac.cn/index)]
 
 - **Background and Motivation**  
 Autonomous driving still faces significant challenges, especially in terms of long-range perception and global awareness. While vehicle sensors have limitations, combining vehicle and infrastructure data can overcome these challenges. However, there was a lack of real-world datasets for vehicle-infrastructure cooperative problems. This paper introduces the DAIR-V2X dataset to facilitate research in this area.
@@ -433,7 +498,8 @@ Autonomous driving still faces significant challenges, especially in terms of lo
   - **Real-World Data**: The dataset includes 71k frames of LiDAR and camera data, collected across various environments with 3D annotations.
   - **Performance Improvement**: The results demonstrate that integrating vehicle and infrastructure data leads to better performance than using single-source data.
 
-### V2X-Seq: A Large-Scale Sequential Dataset for Vehicle-Infrastructure Cooperative Perception and Forecasting  [[paper]()] [[code]()] [[project]()]
+
+### **DAIR-V2X-Seq**  V2X-Seq: A Large-Scale Sequential Dataset for Vehicle-Infrastructure Cooperative Perception and Forecasting   [[paper](https://arxiv.org/abs/2305.05938)] [[code](https://github.com/AIR-THU/DAIR-V2X-Seq)] [[project](https://thudair.baai.ac.cn/index)]
 
 - **Background and Motivation**  
 The paper introduces the V2X-Seq dataset, addressing the need for real-world sequential datasets in vehicle-infrastructure cooperative perception and forecasting. Current research mainly focuses on improving perception using infrastructure data for frame-by-frame 3D detection, but lacks datasets for tracking and forecasting, which are critical for decision-making in autonomous driving.
@@ -445,7 +511,7 @@ The paper introduces the V2X-Seq dataset, addressing the need for real-world seq
   - **Proposed FF-Tracking Method**: A middle fusion framework that efficiently solves the VIC3D tracking problem, handling latency challenges effectively.
 
 
-### HoloVIC: Large-scale Dataset and Benchmark for Multi-Sensor Holographic Intersection and Vehicle-Infrastructure Cooperative  [[paper]()] [[code]()] [[project]()]
+### HoloVIC: Large-scale Dataset and Benchmark for Multi-Sensor Holographic Intersection and Vehicle-Infrastructure Cooperative [[paper](https://arxiv.org/abs/2403.02640)] [~~code~~] [[project](https://holovic.net)]
 
 - **Background and Motivation**  
 The increasing complexity of traffic environments, including occlusions and blind spots, limits the effectiveness of single-viewpoint roadside sensing systems. To enhance the perception capabilities of roadside systems, the paper presents HoloVIC, a large-scale multi-sensor holographic dataset, aiming to improve vehicle-infrastructure cooperation (VIC) by capturing synchronized data from various sensors installed at different intersections.
@@ -480,7 +546,8 @@ Vehicle Re-Identification (Re-ID) has a critical role in enhancing Vehicle-Infra
   - **State-of-the-art Performance**: The proposed CFA-Net achieves the highest reported performance on the DAIR-V2XReid dataset, significantly improving the accuracy of vehicle Re-ID across different camera views.  
   - **Versatile Application**: The model demonstrates good generalization abilities, as evidenced by experiments on the VeRi776 dataset, further confirming its robustness and efficiency for real-world applications.
 
-### TUMTraf-V2X: Cooperative Perception Dataset for 3D Object Detection in Driving Scenarios  [[paper]()] [[code]()] [[project]()]
+
+### TUMTraf-V2X: Cooperative Perception Dataset for 3D Object Detection in Driving Scenarios [[paper](https://arxiv.org/abs/2403.01316)] [[code](https://github.com/tum-traffic-dataset/tum-traffic-dataset-dev-kit)] [[project](https://tum-traffic-dataset.github.io/tumtraf-v2x)]
 
 - **Background and Motivation**  
 This paper presents the TUMTraf-V2X dataset, which aims to enhance vehicle perception through cooperative sensing. Roadside sensors and onboard sensors are used to overcome the limitations of single-sensor systems, especially occlusion and limited field of view. The dataset focuses on 3D object detection and tracking to improve road safety and autonomous driving capabilities.
@@ -490,6 +557,19 @@ This paper presents the TUMTraf-V2X dataset, which aims to enhance vehicle perce
   - **Cooperative 3D Object Detection Model (CoopDet3D)**: A new cooperative fusion model, CoopDet3D, which outperforms traditional camera-LiDAR fusion methods with a +14.3 3D mAP improvement.
   - **Open-Source Tools and Resources**: The dataset and related tools, such as the 3D BAT labeling tool and a development kit, are made publicly available to facilitate integration and model training.
   - **Benchmarking and Evaluation**: Extensive experiments show that cooperative perception models lead to better detection accuracy than vehicle-only systems, proving the benefit of V2X collaboration in object detection tasks.
+
+
+### V2X-DSI: A Density-Sensitive Infrastructure LiDAR Benchmark for Economic Vehicle-to-Everything Cooperative Perception
+
+- **Background and Motivation**  
+The paper addresses the high costs associated with the deployment of infrastructure LiDAR sensors in large-scale Vehicle-to-Everything (V2X) cooperative perception systems. It proposes a new benchmark, V2X-DSI, to explore the economic feasibility of using lower-beam infrastructure LiDAR sensors for cooperative perception. This is crucial as the deployment of high-beam LiDAR sensors on numerous infrastructures is prohibitively expensive, limiting the widespread adoption of V2X systems.
+
+- **Key Contributions**  
+  - **V2X-DSI Benchmark**: Introduces the first Density-Sensitive Infrastructure LiDAR benchmark, V2X-DSI, designed for economic V2X cooperative perception using LiDAR sensors with varying beam densities (16-beam, 32-beam, 64-beam, 128-beam).
+  - **Performance Analysis**: Analyzes the impact of different beam densities on cooperative perception performance, using three state-of-the-art methods: OPV2V, V2X-ViT, and CoBEVT.
+  - **Simulated Scenarios**: Utilizes a large-scale simulation in CARLA, including 56,984 frames from 57 diverse urban scenarios, to evaluate the performance of V2X cooperative perception systems.
+  - **Fine-tuning for Low-Beam LiDAR**: Demonstrates that models trained on high-beam LiDAR can be fine-tuned to improve performance when deployed on low-beam LiDAR, mitigating the performance drop in real-world low-beam scenarios.
+  - **Cost-Effective Deployment**: Provides a solution for reducing costs by using lower-beam LiDAR sensors without significantly compromising detection accuracy in urban traffic scenarios.
 
 
 ### V2X-Radar: A Multi-modal Dataset with 4D Radar for Cooperative Perception  [[paper](https://arxiv.org/abs/2411.10962)] [[code](https://github.com/yanglei18/V2X-Radar)] [[project](http://openmpd.com/column/V2X-Radar)]
@@ -504,7 +584,6 @@ The V2X-Radar dataset was developed to address the limitations in existing coope
   - **Extensive Benchmarking**: The dataset includes benchmarks for recent perception algorithms across these sub-datasets, supporting a wide range of research in cooperative perception.
 
 
-
 ## V2X Datasets
 - **V2X Datasets**: Covering vehicle-to-everything communication, these datasets integrate multiple agents such as vehicles, infrastructure, and other environmental elements like drones or pedestrians, enabling research in complex collaborative scenarios.
 
@@ -512,6 +591,7 @@ The V2X-Radar dataset was developed to address the limitations in existing coope
 
 | **Dataset** | **Year** | **Venue** | **Sensors** | **Source** | **Tasks** | **download** |
 |-------------|----------|-----------|-------------|------------|-----------|----------|
+
 | V2X-Sim | 2022 | RA-L | L, C | Sim | 3DOD, MOT, SS | [download](https://ai4ce.github.io/V2X-Sim/download.html) |
 | V2XSet | 2022 | ECCV | L, C | Sim | 3DOD | [download](https://paperswithcode.com/dataset/v2xset) |
 | DOLPHINS | 2022 | ACCV | L, C | Sim | 2DOD, 3DOD | [download](https://dolphins-dataset.net/) |
@@ -525,6 +605,13 @@ The V2X-Radar dataset was developed to address the limitations in existing coope
 | V2XPnP-Seq | 2024 | arxiv | L, C | Real | Perception and Prediction | [download](https://mobility-lab.seas.ucla.edu/v2xpnp/) |
 | Mixed Signals | 2025 | arxiv | L | Real | 3DOD | [download](https://mixedsignalsdataset.cs.cornell.edu/) |
 | SCOPE | 2024 | arxiv | C, L | Sim | 2DOD, 3DOD, SS, S2R | [download](https://ekut-es.github.io/scope) |
+
+
+
+
+
+
+
 
 Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
 
@@ -540,8 +627,7 @@ The paper addresses the limitations of single-vehicle perception in autonomous d
   - **Comprehensive Sensor Suite**: The dataset includes various sensor modalities from both vehicles and road-side units (RSUs), enhancing perception across different environments.
   - **Collaborative Perception Strategies**: The study uses state-of-the-art collaboration strategies to evaluate the dataset and advance collaborative perception research .
 
-
-### V2X-ViT: Vehicle-to-Everything Cooperative Perception with Vision Transformer  [[paper]()] [[code]()] [[project]()]
+### **V2XSet**   V2X-ViT: Vehicle-to-Everything Cooperative Perception with Vision Transformer [[paper](https://arxiv.org/abs/2203.10638)] [[code](https://github.com/DerrickXuNu/v2x-vit)] [[project](https://drive.google.com/drive/folders/1r5sPiBEvo8Xby-nMaWUTnJIPK6WhY1B6)]
 
 - **Background and Motivation**  
 The paper discusses the challenges of autonomous vehicle (AV) perception in complex driving environments, particularly when vehicles suffer from occlusions and limited sensor range. Vehicle-to-Everything (V2X) communication, including collaboration with infrastructure, is introduced as a solution to enhance perception. However, integrating information from heterogeneous agents like vehicles and infrastructure presents unique challenges, which this paper aims to address.
@@ -564,6 +650,30 @@ The paper addresses the limitations of standalone perception in autonomous drivi
   - **Benchmark for Collaborative Perception**: The paper provides a benchmark for 2D and 3D object detection, as well as multi-view collaborative perception tasks, demonstrating the effectiveness of V2X communication in improving detection accuracy and reducing sensor costs.
 
 
+### V2X-Real: A Large-Scale Dataset for Vehicle-to-Everything Cooperative Perception [[paper](https://arxiv.org/abs/2403.16034)] [~~code~~] [[project](https://mobility-lab.seas.ucla.edu/v2x-real)]
+
+- **Background and Motivation**  
+The paper addresses the limitations in current autonomous driving datasets, specifically in Vehicle-to-Everything (V2X) cooperative perception. Existing datasets primarily focus on Vehicle-to-Vehicle (V2V) or Vehicle-to-Infrastructure (V2I) collaboration, but real-world V2X datasets with both multi-vehicle and infrastructure collaboration are scarce. The need for real-world data to improve V2X perception systems, particularly for handling occlusions and expanding the perception range, is the central motivation.
+
+- **Key Contributions**  
+  - **Introduction of V2X-Real**: The first open, large-scale real-world dataset for V2X cooperative perception, featuring multi-modal sensing data from LiDAR and cameras.
+  - **Four Sub-Datasets**: Divided into Vehicle-Centric, Infrastructure-Centric, Vehicle-to-Vehicle, and Infrastructure-to-Infrastructure cooperative perception datasets, tailored for different collaboration modes.
+  - **Large-Scale Annotations**: Includes over 1.2 million annotated bounding boxes for 10 object categories, providing detailed data for multi-agent, multi-class cooperative 3D object detection tasks.
+  - **Comprehensive Benchmarks**: Provides benchmarks for state-of-the-art cooperative perception methods, enhancing research on V2X interaction in complex urban environments.
+  - **High-Density Traffic Data**: Collected in challenging urban environments with dense traffic, making it suitable for testing cooperative perception algorithms in real-world scenarios. 
+
+
+### DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving [[paper](https://arxiv.org/abs/2304.01168)] [[code](https://github.com/tianqi-wang1996/DeepAccident)] [[project](https://deepaccident.github.io)]
+
+- **Background and Motivation**  
+The paper introduces DeepAccident, the first large-scale V2X dataset designed for motion and accident prediction in autonomous driving. While existing datasets mainly focus on perception tasks, they lack real-world accident scenarios and safety evaluations. The motivation is to provide a comprehensive dataset that includes safety-critical scenarios and supports end-to-end motion and accident prediction tasks for autonomous driving.
+
+- **Key Contributions**  
+  - **DeepAccident Dataset**: The first V2X dataset supporting motion and accident prediction, with 57K annotated frames and 285K annotated samples, offering a diverse range of accident scenarios.
+  - **End-to-End Accident Prediction**: A novel task that predicts the occurrence, timing, location, and involved vehicles or pedestrians in accidents using raw sensor data.
+  - **V2XFormer Model**: A baseline model demonstrating superior performance over single-vehicle models in motion and accident prediction, and 3D object detection tasks.
+  - **V2X Research for Safety**: Enables V2X-based research in perception and prediction, addressing the gap in safety-critical scenario evaluation for autonomous driving algorithms.
+
 
 ### Adver-City: Open-Source Multi-Modal Dataset for Collaborative Perception Under Adverse Weather Conditions[[paper](https://arxiv.org/abs/2410.06380)] [[code](https://github.com/QUARRG/Adver-City)] [[project](https://labs.cs.queensu.ca/quarrg/datasets/adver-city)]
 
@@ -578,28 +688,128 @@ Adverse weather conditions like rain, fog, and glare challenge the performance o
   - **Benchmarking**: Performance benchmarks highlight the challenges posed by adverse weather on multi-modal object detection models, with performance drops observed in certain conditions.
 
 
+### Multi-V2X: A Large Scale Multi-modal Multi-penetration-rate Dataset for Cooperative Perception [[paper](https://arxiv.org/abs/2409.04980)] [[code](https://github.com/RadetzkyLi/Multi-V2X)] [~~project~~]
+
+- **Background and Motivation**  
+The paper introduces the Multi-V2X dataset to address limitations in existing datasets for cooperative perception, particularly the lack of sufficient communicating agents and consideration of CAV penetration rates. Existing real-world datasets offer limited interaction, and synthetic datasets omit vulnerable road users like cyclists and pedestrians, essential for safe autonomous driving.
+
+- **Key Contributions**  
+  - **First Multi-Penetration-Rate Dataset**: Multi-V2X is the first dataset that supports varying CAV penetration rates, providing a realistic training environment for cooperative perception systems with up to 86.21% CAV penetration.
+  - **Large-Scale Data**: The dataset includes 549k RGB frames, 146k LiDAR frames, and 4.2 million annotated 3D bounding boxes across six categories, supporting diverse training scenarios.
+  - **Co-Simulation of SUMO and CARLA**: By co-simulating SUMO for traffic flow and CARLA for sensor simulation, the dataset captures realistic data for autonomous driving research.
+  - **Comprehensive Benchmarks**: The dataset includes benchmarks for cooperative 3D object detection tasks, enabling the development of algorithms that perform under various penetration rates and cooperative settings.
+
+### **DAIR-V2X-Traj**  Learning Cooperative Trajectory Representations for Motion Forecasting [[paper](https://arxiv.org/abs/2311.00371)] [[code](https://github.com/AIR-THU/V2X-Graph)] [[project](https://thudair.baai.ac.cn/index)]
+
+- **Background and Motivation**  
+The paper addresses the challenge of enhancing motion forecasting for autonomous driving by incorporating information from external sources, such as connected vehicles and infrastructure. Traditional methods focus on single-frame cooperative data, often underutilizing the rich motion and interaction context available from cooperative trajectories.
+
+- **Key Contributions**  
+  - **V2X-Graph Framework**: Introduces a novel graph-based framework for cooperative motion forecasting that fuses motion and interaction features from different sources, improving prediction accuracy.
+  - **Forecasting-Oriented Representation Paradigm**: Proposes a new representation paradigm that uses cooperative trajectory data to enhance forecasting capabilities by considering motion and interaction features.
+  - **V2X-Traj Dataset**: Develops the first real-world V2X dataset for motion forecasting, which includes both vehicle-to-infrastructure (V2I) and vehicle-to-vehicle (V2V) cooperation in every scenario.
+  - **State-of-the-Art Performance**: Demonstrates that the proposed method outperforms existing approaches on the V2X-Seq and V2X-Traj datasets, highlighting the effectiveness of cooperative data fusion in motion forecasting.
 
 
+### WHALES: A Multi-Agent Scheduling Dataset for Enhanced Cooperation in Autonomous Driving [[paper](https://arxiv.org/abs/2411.13340)] [[code](https://github.com/chensiweiTHU/WHALES)] [[project](https://pan.baidu.com/s/1dintX-d1T-m2uACqDlAM9A)]
+
+- **Background and Motivation**  
+The paper presents the WHALES dataset, aiming to address the limitations in current cooperative perception datasets for autonomous driving. Existing datasets often involve a limited number of agents, reducing the effectiveness of multi-agent cooperation. WHALES tackles this by simulating environments with up to 8.4 agents per sequence, enhancing the scope for studying cooperative perception and agent scheduling.
+
+- **Key Contributions**  
+  - **Large-Scale Multi-Agent Dataset**: WHALES features 70K RGB images, 17K LiDAR frames, and 2.01M 3D bounding box annotations, capturing cooperative perception with multiple agents.
+  - **Innovative Agent Scheduling**: Introduces the concept of agent scheduling in cooperative perception, a novel task not explored in previous datasets, optimizing cooperation for perception gains.
+  - **Simulated Scenarios**: The dataset includes diverse road scenarios, including intersections and highway ramps, enabling more comprehensive research in cooperative driving.
+  - **Benchmarking Tasks**: Provides benchmarks for 3D object detection and agent scheduling, supporting the development of algorithms for multi-agent cooperation in autonomous driving systems.
 
 
+###  **V2X-R**  V2X-R: Cooperative LiDAR-4D Radar Fusion with Denoising Diffusion for 3D Object Detection [[paper](https://arxiv.org/abs/2411.08402)] [[code](https://github.com/ylwhxht/V2X-R)] [~~project~~]
+
+- **Background and Motivation**  
+The paper introduces the V2X-R dataset, a novel contribution to Vehicle-to-Everything (V2X) cooperative perception. Current datasets, which mainly focus on LiDAR and camera data, struggle under adverse weather conditions. The addition of 4D radar data, known for its weather robustness, aims to enhance 3D object detection in such challenging environments.
+
+- **Key Contributions**  
+  - **First V2X-R Dataset**: The first simulated V2X dataset that integrates LiDAR, camera, and 4D radar data, addressing weather robustness in cooperative perception.
+  - **Cooperative LiDAR-4D Radar Fusion Pipeline**: Proposes a novel fusion pipeline that improves 3D object detection by combining data from multiple agents, LiDAR, and 4D radar sensors.
+  - **Multi-modal Denoising Diffusion (MDD)**: Introduces a denoising diffusion module that uses 4D radar to guide the denoising process of noisy LiDAR data in adverse weather conditions, improving the detection accuracy.
+  - **Comprehensive Benchmarking**: Establishes a benchmark using various fusion strategies and models, demonstrating the superior performance of the proposed approach in both normal and adverse weather conditions.
 
 
+### V2XPnP: Vehicle-to-Everything Spatio-Temporal Fusion for Multi-Agent Perception and Prediction [[paper](https://arxiv.org/abs/2412.01812)] [[code](https://github.com/Zewei-Zhou/V2XPnP)] [[project](https://mobility-lab.seas.ucla.edu/v2xpnp)]
+
+- **Background and Motivation**  
+The paper addresses limitations in current Vehicle-to-Everything (V2X) cooperative perception systems that ignore temporal relationships across frames. While previous research focuses on single-frame perception, there is a lack of frameworks that handle temporal cues for perception and prediction. This work aims to integrate spatio-temporal information to improve cooperative perception and prediction in V2X environments, where vehicles and infrastructures share data to overcome occlusions and enhance safety.
+
+- **Key Contributions**  
+  - **V2XPnP Framework**: Introduces a novel spatio-temporal fusion framework using a Transformer architecture for end-to-end perception and prediction tasks, integrating temporal, spatial, and map information.
+  - **First Real-World V2X Sequential Dataset**: Presents the V2XPnP Sequential Dataset, supporting all V2X collaboration modes (V2V, V2I, I2I), including 100 scenarios with diverse agent interactions and temporal consistency.
+  - **Spatio-Temporal Fusion Strategies**: Proposes advanced fusion strategies—early, late, and intermediate fusion—incorporating temporal information for enhanced perception and prediction performance.
+  - **Superior Performance**: Demonstrates that the V2XPnP framework significantly outperforms existing methods in both perception and prediction tasks, with a notable improvement in the EPA (End-to-End Perception and Prediction Accuracy) metric.
 
 
+### Mixed Signals: A Diverse Point Cloud Dataset for Heterogeneous LiDAR V2X Collaboration [[paper](https://arxiv.org/abs/2502.14156)] [[code](https://github.com/chinitaberrio/Mixed-Signals)] [[project](https://mixedsignalsdataset.cs.cornell.edu)]
+
+- **Background and Motivation**  
+The paper introduces the Mixed Signals dataset, designed to address the gaps in existing V2X datasets. While many datasets focus on homogeneous sensor setups from identical vehicles, the Mixed Signals dataset aims to capture the complexities of real-world V2X collaboration by including heterogeneous LiDAR configurations and left-hand driving scenarios, providing data for robust multi-agent perception tasks.
+
+- **Key Contributions**  
+  - **Heterogeneous LiDAR Configurations**: First V2X dataset featuring three vehicles with two different LiDAR sensors and a roadside unit with dual LiDARs, adding complexity to real-world V2X collaboration.
+  - **Diverse Traffic Participants**: Includes 10 classes of objects, including 4 categories of vulnerable road users (VRUs), with over 240K 3D bounding box annotations.
+  - **High-Quality Data Collection**: Precise synchronization and localization techniques for accurate sensor alignment, ensuring high-quality, annotated data that can be used for perception training and benchmarking.
+  - **Real-World Scenario**: Captures data from real-world scenarios in Sydney, Australia, with left-hand traffic, increasing the dataset's applicability globally.
+  - **Benchmarking and Evaluation**: Provides extensive benchmarks for collaborative object detection, enabling the development of advanced V2X perception methods.
 
 
-- **CP-GuardBench** (CP-Guard+: A New Paradigm for Malicious Agent Detection and Defense in Collaborative Perception) [[paper&review](https://openreview.net/forum?id=9MNzHTSDgh)] [~~code~~] [~~project~~]
-- **Griffin** (Griffin: Aerial-Ground Cooperative Detection and Tracking Dataset and Benchmark) [[paper](https://arxiv.org/abs/2503.06983)] [[code](https://github.com/wang-jh18-SVM/Griffin)] [[project](https://pan.baidu.com/s/1NDgsuHB-QPRiROV73NRU5g)]
-- {Real} **Mixed Signals** (Mixed Signals: A Diverse Point Cloud Dataset for Heterogeneous LiDAR V2X Collaboration) [[paper](https://arxiv.org/abs/2502.14156)] [[code](https://github.com/chinitaberrio/Mixed-Signals)] [[project](https://mixedsignalsdataset.cs.cornell.edu)]
-- **Multi-V2X** (Multi-V2X: A Large Scale Multi-modal Multi-penetration-rate Dataset for Cooperative Perception) [[paper](https://arxiv.org/abs/2409.04980)] [[code](https://github.com/RadetzkyLi/Multi-V2X)] [~~project~~]
-- **OPV2V-N** (RCDN: Towards Robust Camera-Insensitivity Collaborative Perception via Dynamic Feature-based 3D Neural Modeling) [[paper](https://arxiv.org/abs/2405.16868)] [~~code~~] [~~project~~]
-- {Real} **V2XPnP-Seq** (V2XPnP: Vehicle-to-Everything Spatio-Temporal Fusion for Multi-Agent Perception and Prediction) [[paper](https://arxiv.org/abs/2412.01812)] [[code](https://github.com/Zewei-Zhou/V2XPnP)] [[project](https://mobility-lab.seas.ucla.edu/v2xpnp)]
-- {Real} **V2X-Real** (V2X-Real: a Large-Scale Dataset for Vehicle-to-Everything Cooperative Perception) [[paper](https://arxiv.org/abs/2403.16034)] [~~code~~] [[project](https://mobility-lab.seas.ucla.edu/v2x-real)]
-- {Real} **V2X-ReaLO** (V2X-ReaLO: An Open Online Framework and Dataset for Cooperative Perception in Reality) [[paper](https://arxiv.org/abs/2503.10034)] [~~code~~] [~~project~~]
-- **WHALES** (WHALES: A Multi-Agent Scheduling Dataset for Enhanced Cooperation in Autonomous Driving) [[paper](https://arxiv.org/abs/2411.13340)] [[code](https://github.com/chensiweiTHU/WHALES)] [[project](https://pan.baidu.com/s/1dintX-d1T-m2uACqDlAM9A)]
+### SCOPE: A Synthetic Multi-Modal Dataset for Collective Perception Including Physical-Correct Weather Conditions
+
+- **Background and Motivation**  
+The paper introduces the SCOPE dataset, designed to address gaps in current datasets for collective perception (CP) in autonomous driving. Existing datasets lack scenario diversity, realistic sensor models, and environmental conditions like adverse weather. SCOPE is created to support the development and testing of collective perception algorithms, especially in challenging real-world conditions.
+
+- **Key Contributions**  
+  - **First Synthetic Multi-Modal CP Dataset**: SCOPE is the first synthetic dataset that combines realistic LiDAR and camera models with physically-accurate weather simulations for both sensors.
+  - **Diverse Scenarios**: The dataset includes 17,600 frames from over 40 different scenarios, including edge cases like tunnels and roundabouts, with up to 24 collaborative agents.
+  - **Weather Simulations**: SCOPE introduces realistic rain and fog simulations with parameterized intensities, improving robustness against environmental effects on perception.
+  - **Wide Sensor Setup**: The dataset uses a variety of sensors, including RGB and SemSeg cameras, along with three different LiDAR models, to enable comprehensive object detection and semantic segmentation tasks.
+  - **Novel Maps**: It includes two novel digital-twin maps from Karlsruhe and Tübingen, enhancing the dataset’s real-world applicability.
 
 
+### **OPV2V-N**  RCDN: Towards Robust Camera-Insensitivity Collaborative Perception via Dynamic Feature-based 3D Neural Modeling [[paper](https://arxiv.org/abs/2405.16868)] [~~code~~] [~~project~~]
 
+- **Background and Motivation**  
+The paper introduces RCDN, a solution to overcome the issue of noisy or failed camera perspectives in multi-agent collaborative perception. In real-world settings, cameras can be blurred, noisy, or even fail, severely affecting the performance of collaborative perception systems. RCDN aims to recover perceptual messages from failed camera perspectives using dynamic feature-based 3D neural modeling, ensuring robust collaborative performance with low calibration costs.
+
+- **Key Contributions**  
+  - **Introduction of RCDN**: A robust camera-insensitivity collaborative perception system that uses dynamic feature-based 3D neural modeling to recover failed perceptual information.
+  - **Collaborative Neural Rendering**: RCDN constructs collaborative neural rendering field representations to stabilize high collaborative performance even in the presence of noisy or failed cameras.
+  - **Two Collaborative Fields**: Introduces time-invariant static and time-varying dynamic fields for collaborative perception, enhancing the system’s ability to handle camera failures and recover from noisy inputs.
+  - **New Dataset - OPV2V-N**: Introduces OPV2V-N, a large-scale dataset with manually labeled data, simulating various camera failure scenarios for better research on camera-insensitive collaborative perception.
+  - **Improved Robustness**: Demonstrates that RCDN significantly enhances the performance of existing collaborative perception methods, improving their robustness by up to 157.91% under extreme camera-insensitivity conditions.
+
+
+### **CP-GuardBench**  CP-Guard+: A New Paradigm for Malicious Agent Detection and Defense in Collaborative Perception [[paper&review](https://openreview.net/forum?id=9MNzHTSDgh)] [~~code~~] [~~project~~]
+
+- **Background and Motivation**  
+The paper introduces CP-Guard+, a solution for enhancing the security of collaborative perception (CP) systems in autonomous driving. While CP systems enable vehicles to share sensory data for improved perception, they are vulnerable to malicious agents that may inject adversarial data, potentially compromising safety. The motivation behind CP-Guard+ is to create a robust, computationally efficient framework that can detect and defend against such malicious agents, mitigating risks in autonomous driving environments.
+
+- **Key Contributions**  
+  - **Feature-Level Malicious Agent Detection**: Proposes a novel approach for detecting malicious agents directly at the feature level, eliminating the need for computationally expensive hypotheses and verifications.
+  - **CP-GuardBench Dataset**: Introduces the first benchmark dataset, CP-GuardBench, designed specifically for training and evaluating malicious agent detection methods in CP systems.
+  - **CP-Guard+ Defense Framework**: Develops CP-Guard+, a defense mechanism that improves malicious agent detection by enhancing the separability of benign and malicious features using a Dual-Centered Contrastive Loss (DCCLoss).
+  - **Superior Performance**: Demonstrates through extensive experiments on both CP-GuardBench and V2X-Sim datasets that CP-Guard+ outperforms traditional defense methods, achieving high accuracy and low false positive rates while significantly reducing computational overhead.
+  - **Efficiency and Scalability**: CP-Guard+ achieves a substantial increase in frames per second (FPS) compared to existing methods, proving its efficiency in real-time CP systems.
+
+
+### V2X-ReaLO: An Open Online Framework and Dataset for Cooperative Perception in Reality [[paper](https://arxiv.org/abs/2503.10034)] [~~code~~] [~~project~~]
+
+- **Background and Motivation**  
+The paper addresses the challenges of applying Vehicle-to-Everything (V2X) cooperative perception in real-world conditions. Previous research often focuses on simulations or static datasets, which fail to capture dynamic, real-time conditions such as communication latency and sensor misalignment. V2X-ReaLO aims to bridge this gap by providing a practical, real-world framework that demonstrates the feasibility of real-time intermediate fusion.
+
+- **Key Contributions**  
+  - **V2X-ReaLO Framework**: Introduces an open online framework for cooperative perception deployed on real vehicles and smart infrastructure, integrating early, late, and intermediate fusion methods.
+  - **First Practical Demonstration**: Provides the first real-world demonstration of the feasibility and performance of intermediate fusion under real-world conditions.
+  - **Open Online Benchmark Dataset**: Extends the V2X-Real dataset to dynamic, synchronized ROS bags with 25,028 frames, including 6,850 annotated key frames for real-time evaluation in challenging urban scenarios.
+  - **Real-Time Evaluation**: Supports online evaluations, accounting for real-world challenges such as bandwidth limitations, latency, and asynchronous message arrival.
+  - **Comprehensive Benchmarking**: Conducts extensive benchmarks to assess multi-class, multi-agent V2X cooperative perception performance, highlighting the system's effectiveness in various collaboration modes (V2V, V2I, and I2I).
 
 
 ## I2I Datasets
@@ -614,97 +824,47 @@ Adverse weather conditions like rain, fog, and glare challenge the performance o
 
 Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the real world; Sim = generated via simulation. Tasks: 2DOD = 2D Object Detection, 3DOD = 3D Object Detection, MOT = Multi-Object Tracking, MTSCT = Multi-target Single-camera Tracking, MTMCT = Multi-target Multi-camera Tracking, SS = Semantic Segmentation, TP = Trajectory Prediction, VPR = Visual Place Recognition, NR = Neural Reconstruction, Re-ID = Re-Identification, S2R = Sim2Real, MF = Motion Forecasting, PQA = Planning Q&A.
 
-- {Real} **InScope** (InScope: A New Real-world 3D Infrastructure-side Collaborative Perception Dataset for Open Traffic Scenarios) [[paper](https://arxiv.org/abs/2407.21581)] [[code](https://github.com/xf-zh/InScope)] [~~project~~]
+
+### RCooper: A Real-world Large-scale Dataset for Roadside Cooperative Perception  [[paper](https://arxiv.org/abs/2403.10145)] [[code](https://github.com/AIR-THU/DAIR-RCooper)] [[project](https://www.t3caic.com/qingzhen)]
+
+- **Background and Motivation**  
+The paper introduces RCooper, the first real-world, large-scale dataset for roadside cooperative perception. Existing roadside perception systems focus on independent sensors, leading to limited sensing range and blind spots. Roadside cooperative perception (RCooper) aims to enhance traffic monitoring and autonomous driving by using data from multiple roadside sensors to overcome these limitations, providing more comprehensive coverage.
+
+- **Key Contributions**  
+  - **First Real-World RCooper Dataset**: RCooper is the first large-scale dataset dedicated to roadside cooperative perception, including 50k images and 30k point clouds with manual annotations.
+  - **Two Main Traffic Scenes**: The dataset includes two representative traffic scenes: intersections and corridors, capturing diverse traffic flow and environmental conditions.
+  - **Challenges in Roadside Perception**: The dataset addresses challenges such as data heterogeneity, sensor alignment, and cooperative representation for roadside systems.
+  - **Cooperative Detection and Tracking Tasks**: RCooper provides benchmarks for two tasks—3D object detection and tracking—using multi-agent cooperation, with state-of-the-art methods included for comparison.
+  - **Comprehensive Annotation and Data Diversity**: The dataset is annotated with 3D bounding boxes and trajectories across ten semantic classes and includes variations in weather and lighting conditions.
 
 
+### InScope: A New Real-world 3D Infrastructure-side Collaborative Perception Dataset for Open Traffic Scenarios  [[paper](https://arxiv.org/abs/2407.21581)] [[code](https://github.com/xf-zh/InScope)] [~~project~~]
 
+- **Background and Motivation**  
+The paper introduces the InScope dataset, aiming to address the issue of occlusion in vehicle-centric perception systems. Infrastructure-side perception systems (IPS) are suggested to complement autonomous vehicles, providing broader coverage. However, the lack of real-world 3D infrastructure-side datasets limits the progress in V2X technologies. InScope aims to bridge this gap by capturing occlusion challenges and providing collaborative perception data.
 
+- **Key Contributions**  
+  - **First Large-Scale Infrastructure-Side Collaborative Dataset**: InScope is the first 3D infrastructure-side dataset designed to handle occlusion challenges with multi-position LiDARs.
+  - **Comprehensive Data Collection**: Includes 303 tracking trajectories and 187,787 3D bounding box annotations captured over 20 days in open traffic scenarios.
+  - **Four Key Benchmarks**: The dataset provides benchmarks for 3D object detection, multi-source data fusion, data domain transfer, and 3D multi-object tracking tasks.
+  - **Anti-Occlusion Evaluation Metric**: Introduces a new metric (𝜉𝐷) to evaluate the anti-occlusion capabilities of detection methods, quantifying detection degradation ratios between single and multi-LiDAR setups.
+  - **Enhanced Perception**: The dataset significantly enhances performance in detecting and tracking occluded, small, and distant objects, which are critical for real-world traffic safety.
+
+## 其他协同感知数据集论文
+- **Griffin** (Griffin: Aerial-Ground Cooperative Detection and Tracking Dataset and Benchmark) [[paper](https://arxiv.org/abs/2503.06983)] [[code](https://github.com/wang-jh18-SVM/Griffin)] [[project](https://pan.baidu.com/s/1NDgsuHB-QPRiROV73NRU5g)]
+- **RLS** (Analyzing Infrastructure LiDAR Placement with Realistic LiDAR Simulation Library) [[paper](https://arxiv.org/abs/2211.15975)] [[code](https://github.com/PJLab-ADG/LiDARSimLib-and-Placement-Evaluation)] [~~project~~]
+- **Roadside-Opt** (Optimizing the Placement of Roadside LiDARs for Autonomous Driving) [[paper](https://arxiv.org/abs/2310.07247)] [~~code~~] [~~project~~]
+- {Real} **DAIR-V2X-C Complemented** (Robust Collaborative 3D Object Detection in Presence of Pose Errors) [[paper](https://arxiv.org/abs/2211.07214)] [[code](https://github.com/yifanlu0227/CoAlign)] [[project](https://siheng-chen.github.io/dataset/dair-v2x-c-complemented)]
+- **V2XP-ASG** (V2XP-ASG: Generating Adversarial Scenes for Vehicle-to-Everything Perception) [[paper](https://arxiv.org/abs/2209.13679)] [[code](https://github.com/XHwind/V2XP-ASG)] [~~project~~]
+- **AutoCastSim** (COOPERNAUT: End-to-End Driving with Cooperative Perception for Networked Vehicles) [[paper](https://arxiv.org/abs/2205.02222)] [[code](https://github.com/hangqiu/AutoCastSim)] [[project](https://utexas.app.box.com/v/coopernaut-dataset)]
+- **Mono3DVLT-V2X** (Mono3DVLT: Monocular-Video-Based 3D Visual Language Tracking) [~~paper~~] [~~code~~] [~~project~~]
+- **RCP-Bench** (RCP-Bench: Benchmarking Robustness for Collaborative Perception Under Diverse Corruptions) [~~paper~~] [~~code~~] [~~project~~]
 
 
 
 
 
 ## Methods
-
-
-
-
-
-
-### 
-### 
-### 
-### 
-
-### Selected Preprint
-
-
-### CVPR 2025
-
-- **Mono3DVLT-V2X** (Mono3DVLT: Monocular-Video-Based 3D Visual Language Tracking) [~~paper~~] [~~code~~] [~~project~~]
-- **RCP-Bench** (RCP-Bench: Benchmarking Robustness for Collaborative Perception Under Diverse Corruptions) [~~paper~~] [~~code~~] [~~project~~]
-- **V2X-R** (V2X-R: Cooperative LiDAR-4D Radar Fusion for 3D Object Detection with Denoising Diffusion) [[paper](https://arxiv.org/abs/2411.08402)] [[code](https://github.com/ylwhxht/V2X-R)] [~~project~~]
-
-### CVPR 2024
-
-- {Real} **HoloVIC** (HoloVIC: Large-Scale Dataset and Benchmark for Multi-Sensor Holographic Intersection and Vehicle-Infrastructure Cooperative) [[paper](https://arxiv.org/abs/2403.02640)] [~~code~~] [[project](https://holovic.net)]
-- {Real} **Open Mars Dataset** (Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset) [[code](https://github.com/ai4ce/MARS)] [[paper](https://arxiv.org/abs/2406.09383)] [[project](https://ai4ce.github.io/MARS)]
-- {Real} **RCooper** (RCooper: A Real-World Large-Scale Dataset for Roadside Cooperative Perception) [[paper](https://arxiv.org/abs/2403.10145)] [[code](https://github.com/AIR-THU/DAIR-RCooper)] [[project](https://www.t3caic.com/qingzhen)]
-- {Real} **TUMTraf-V2X** (TUMTraf V2X Cooperative Perception Dataset) [[paper](https://arxiv.org/abs/2403.01316)] [[code](https://github.com/tum-traffic-dataset/tum-traffic-dataset-dev-kit)] [[project](https://tum-traffic-dataset.github.io/tumtraf-v2x)]
-
-### ECCV 2024
-
-
-### NeurIPS 2024
-
-- {Real} **DAIR-V2X-Traj** (Learning Cooperative Trajectory Representations for Motion Forecasting) [[paper](https://arxiv.org/abs/2311.00371)] [[code](https://github.com/AIR-THU/V2X-Graph)] [[project](https://thudair.baai.ac.cn/index)]
-
-### ICLR 2024
-
-- **OPV2V-H** (An Extensible Framework for Open Heterogeneous Collaborative Perception) [[paper&review](https://openreview.net/forum?id=KkrDUGIASk)] [[code](https://github.com/yifanlu0227/HEAL)] [[project](https://huggingface.co/datasets/yifanlu/OPV2V-H)]
-
-### AAAI 2024
-
-- **DeepAccident** (DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving) [[paper](https://arxiv.org/abs/2304.01168)] [[code](https://github.com/tianqi-wang1996/DeepAccident)] [[project](https://deepaccident.github.io)]
-
-### CVPR 2023
-
-- **CoPerception-UAV+** (Collaboration Helps Camera Overtake LiDAR in 3D Detection) [[paper](https://arxiv.org/abs/2303.13560)] [[code](https://github.com/MediaBrain-SJTU/CoCa3D)] [[project](https://siheng-chen.github.io/dataset/CoPerception+)]
-- **OPV2V+** (Collaboration Helps Camera Overtake LiDAR in 3D Detection) [[paper](https://arxiv.org/abs/2303.13560)] [[code](https://github.com/MediaBrain-SJTU/CoCa3D)] [[project](https://siheng-chen.github.io/dataset/CoPerception+)]
-- {Real} **V2V4Real** (V2V4Real: A Large-Scale Real-World Dataset for Vehicle-to-Vehicle Cooperative Perception) [[paper](https://arxiv.org/abs/2303.07601)] [[code](https://github.com/ucla-mobility/V2V4Real)] [[project](https://mobility-lab.seas.ucla.edu/v2v4real)]
-- {Real} **DAIR-V2X-Seq** (V2X-Seq: The Large-Scale Sequential Dataset for the Vehicle-Infrastructure Cooperative Perception and Forecasting) [[paper](https://arxiv.org/abs/2305.05938)] [[code](https://github.com/AIR-THU/DAIR-V2X-Seq)] [[project](https://thudair.baai.ac.cn/index)]
-
-### NeurIPS 2023
-
-- **IRV2V** (Robust Asynchronous Collaborative 3D Detection via Bird's Eye View Flow) [[paper&review](https://openreview.net/forum?id=UHIDdtxmVS)] [~~code~~] [~~project~~]
-
-### ICCV 2023
-
-- **Roadside-Opt** (Optimizing the Placement of Roadside LiDARs for Autonomous Driving) [[paper](https://arxiv.org/abs/2310.07247)] [~~code~~] [~~project~~]
-
-### ICRA 2023
-
-- {Real} **DAIR-V2X-C Complemented** (Robust Collaborative 3D Object Detection in Presence of Pose Errors) [[paper](https://arxiv.org/abs/2211.07214)] [[code](https://github.com/yifanlu0227/CoAlign)] [[project](https://siheng-chen.github.io/dataset/dair-v2x-c-complemented)]
-- **RLS** (Analyzing Infrastructure LiDAR Placement with Realistic LiDAR Simulation Library) [[paper](https://arxiv.org/abs/2211.15975)] [[code](https://github.com/PJLab-ADG/LiDARSimLib-and-Placement-Evaluation)] [~~project~~]
-- **V2XP-ASG** (V2XP-ASG: Generating Adversarial Scenes for Vehicle-to-Everything Perception) [[paper](https://arxiv.org/abs/2209.13679)] [[code](https://github.com/XHwind/V2XP-ASG)] [~~project~~]
-
-### CVPR 2022
-
-- **AutoCastSim** (COOPERNAUT: End-to-End Driving with Cooperative Perception for Networked Vehicles) [[paper](https://arxiv.org/abs/2205.02222)] [[code](https://github.com/hangqiu/AutoCastSim)] [[project](https://utexas.app.box.com/v/coopernaut-dataset)]
-- {Real} **DAIR-V2X** (DAIR-V2X: A Large-Scale Dataset for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper](https://arxiv.org/abs/2204.05575)] [[code](https://github.com/AIR-THU/DAIR-V2X)] [[project](https://thudair.baai.ac.cn/index)]
-
-### NeurIPS 2022
-
-
-### ECCV 2022
-
-- **V2XSet** (V2X-ViT: Vehicle-to-Everything Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2203.10638)] [[code](https://github.com/DerrickXuNu/v2x-vit)] [[project](https://drive.google.com/drive/folders/1r5sPiBEvo8Xby-nMaWUTnJIPK6WhY1B6)]
-
-### ICRA 2022
-
-- **OPV2V** (OPV2V: An Open Benchmark Dataset and Fusion Pipeline for Perception with Vehicle-to-Vehicle Communication) [[paper](https://arxiv.org/abs/2109.07644)] [[code](https://github.com/DerrickXuNu/OpenCOOD)] [[project](https://mobility-lab.seas.ucla.edu/opv2v)]
-
-### ACCV 2022
 
 
 
