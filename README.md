@@ -7,46 +7,12 @@ First, the repository introduces commonly used **autonomous driving simulation t
 
 
 
-### :link:Jump to:
-- ### [[Simulator](#simulator)]
-- ### [[Roadside Datasets](#roadside-datasets)]
-- ### [[V2V Datasets](#v2v-datasets)]
-- ### [[V2I Datasets](#v2i-datasets)]
-- ### [[V2X Datasets](#v2x-datasets)]
-- ### [[I2I Datasets](#i2i-datasets)]
-- ### [[Methods](#methods)]
-
-
-
-### :link:Jump to:
-- ### [Simulator](#simulator)
-- ### [Roadside Datasets](#roadside-datasets)
-- ### [V2V Datasets](#v2v-datasets)
-- ### [V2I Datasets](#v2i-datasets)
-- ### [V2X Datasets](#v2x-datasets)
-- ### [I2I Datasets](#i2i-datasets)
-- ### [Methods](#methods)
-
-
-
-### :link:Jump to:
-- ### [Method and Framework](#method-and-framework)
-- ### [Dataset and Simulator](#dataset-and-simulator)
-
-### :link:Jump to:
-- ### [[Method and Framework](https://github.com/Little-Podi/Collaborative_Perception#bookmarkmethod-and-framework)]
-- ### [[Dataset and Simulator](https://github.com/Little-Podi/Collaborative_Perception#bookmarkdataset-and-simulator)]
-
-
 
 
 ### :link:Jump to:
 - [Simulator](#simulator)
 - [Roadside Datasets](#roadside-datasets)
 - [V2V Datasets](#v2v-datasets)
-
----
-
 
 
 
