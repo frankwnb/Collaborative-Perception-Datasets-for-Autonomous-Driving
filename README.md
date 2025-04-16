@@ -816,6 +816,8 @@ The paper introduces the InScope dataset, aiming to address the issue of occlusi
 
 ## :bookmark:Methods <a id="methods-anchor"></a>
 
+以下内容来自[[Reference](https://github.com/Little-Podi/Collaborative_Perception?tab=readme-ov-file#bookmarkdataset-and-simulator)]，有待修改。
+
 Note: {Related} denotes that it is not a pure collaborative perception paper but has related content.
 
 ### Selected Preprint
