@@ -14,6 +14,7 @@ First, the repository introduces commonly used **autonomous driving simulation t
 - [I2I Datasets](#i2i-datasets-anchor)
 - [Methods](#methods-anchor)
 
+[~~code~~]  [~~paper~~]  [~~project~~]
 
 ## :bookmark:Simulator  <a id="simulator-anchor"></a>
 
@@ -42,7 +43,8 @@ The paper introduces CARLA, an open-source simulator specifically designed for a
   - **Simulation of Three Approaches**: The paper tests and compares three approaches to autonomous driving: a modular pipeline, imitation learning, and reinforcement learning, providing valuable insights into their performance in controlled urban scenarios.
   - **Evaluation Metrics**: The simulation framework provides comprehensive metrics for performance evaluation, facilitating in-depth analysis of driving policies.
 
-### SUMO: Simulation of Urban MObility [[paper](https://elib.dlr.de/6661/2/dkrajzew_MESM2002.pdf)] [[code]()] [[project](https://elib.dlr.de/6661/)]
+
+### SUMO: Simulation of Urban MObility [[paper](https://elib.dlr.de/6661/2/dkrajzew_MESM2002.pdf)] [~~code~~] [[project](https://elib.dlr.de/6661/)]
 
 - **Background and Motivation**
 Traffic simulation plays a crucial role in understanding and improving urban mobility, given the complexity and unpredictability of real-world traffic. Existing traffic models often fail to account for the variability introduced by individual driver behavior, diverse transportation modes, and changing traffic conditions. To address these challenges, open-source simulation tools are essential to enable researchers to model and analyze traffic behavior more effectively.
@@ -54,7 +56,7 @@ Traffic simulation plays a crucial role in understanding and improving urban mob
   - **Support for Various Modalities**: SUMO supports multi-modal simulations, including cars, buses, trams, and pedestrian pathways, to simulate complex urban environments.
   - **Simulation of Large-Scale Networks**: SUMO is capable of simulating large urban areas and can handle high volumes of traffic data, making it suitable for analyzing traffic management strategies in large cities. 
 
-### AirSim: High-Fidelity Visual and Physical Simulation for Autonomous Vehicles [[paper]()] [[code]()] [[project]()]
+### AirSim: High-Fidelity Visual and Physical Simulation for Autonomous Vehicles [[paper](https://link.springer.com/chapter/10.1007/978-3-319-67361-5_40)]  [~~code~~] [~~project~~]
 
 - **Background and Motivation**  
 Testing autonomous vehicles in real-world environments is both costly and time-consuming. Additionally, collecting the large datasets required for training machine learning algorithms can be challenging and impractical. AirSim, built on Unreal Engine, aims to address these issues by offering a high-fidelity simulation platform that supports real-time, hardware-in-the-loop simulations. It is designed to provide realistic physical and visual simulations to aid the development of autonomous vehicles, enabling safe and cost-effective testing in various environments.
@@ -66,7 +68,7 @@ Testing autonomous vehicles in real-world environments is both costly and time-c
   - **Integration with Unreal Engine**: By leveraging Unreal Engine, AirSim supports realistic rendering, including photorealistic graphics, object segmentation, and depth sensing.
   - **Vehicle Model and Simulation**: AirSim includes a vehicle model capable of simulating a range of vehicle types, from ground vehicles to aerial drones, with detailed dynamics and control mechanisms.
 
-### OpenCDA: An Open Cooperative Driving Automation Framework Integrated with Co-Simulation  [[code](https://github.com/ucla-mobility/OpenCDA)] [[doc](https://opencda-documentation.readthedocs.io/en/latest)]
+### OpenCDA: An Open Cooperative Driving Automation Framework Integrated with Co-Simulation [[paper](https://ieeexplore.ieee.org/abstract/document/9564825)] [[code](https://github.com/ucla-mobility/OpenCDA)] [[doc](https://opencda-documentation.readthedocs.io/en/latest)]
 
 - **Background and Motivation**  
 Cooperative Driving Automation (CDA) is gaining attention but faces significant challenges, particularly the lack of simulation platforms that support multi-vehicle cooperation. Current simulators primarily focus on single-vehicle automation, hindering the evaluation and comparison of CDA algorithms in a collaborative setting. OpenCDA was developed to bridge this gap, providing a flexible and modular tool for testing CDA algorithms in both traffic-level and individual vehicle scenarios.
@@ -77,6 +79,7 @@ Cooperative Driving Automation (CDA) is gaining attention but faces significant 
   - **Full-Stack CDA System**: OpenCDA provides a complete system including sensing, computation, and actuation modules, along with cooperative features like vehicle communication and information sharing.
   - **Benchmarking and Testing**: It includes a benchmark testing database, offering standard scenarios and evaluation metrics for comparing CDA algorithms.
   - **Platooning Example**: The paper demonstrates the capabilities of OpenCDA through a platooning implementation, showcasing its flexibility and effectiveness in CDA research.
+
 
 ## :bookmark:Roadside Datasets  <a id="roadside-datasets-anchor"></a>
 ### Table
@@ -101,7 +104,7 @@ Note: Sensors: Camera (C), LiDAR (L), Radar (R). Source: Real = collected in the
 
 Note: {Real} denotes that the sensor data is obtained by real-world collection instead of simulation.
 
-### The Ko-PER Intersection Laserscanner and Video Dataset [[paper]()] [[code]()] [[project]()]
+### The Ko-PER Intersection Laserscanner and Video Dataset [[paper](https://ieeexplore.ieee.org/abstract/document/6957976)] [~~code~~] [[project](https://www.uni-ulm.de/in/mrm/forschung/datensaetze.html)]
 
 - **Background and Motivation**  
 Intersections are critical areas for traffic safety, as they are often the sites of accidents. Traditional methods of assessing and improving intersection safety are limited by real-world testing challenges. The Ko-PER project addresses this by equipping a public intersection with laserscanners and video cameras, enabling comprehensive data collection for traffic perception tasks. The primary motivation is to develop better models for road user detection, classification, and tracking, thus improving intersection safety.
@@ -113,7 +116,7 @@ Intersections are critical areas for traffic safety, as they are often the sites
   - **Real-World Intersection Setup**: Data was collected from a complex intersection, providing a naturalistic environment for testing and validating algorithms for intersection collision avoidance systems.
   - **Public Availability**: The dataset is publicly available for use by the research community, promoting further advancements in cooperative perception and road user detection technologies.
  
-### CityFlow: A City-Scale Benchmark for Multi-Target Multi-Camera Vehicle Tracking and Re-Identification [[paper]()] [[code]()] [[project]()]
+### CityFlow: A City-Scale Benchmark for Multi-Target Multi-Camera Vehicle Tracking and Re-Identification [[paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Tang_CityFlow_A_City-Scale_Benchmark_for_Multi-Target_Multi-Camera_Vehicle_Tracking_and_CVPR_2019_paper.pdf)] [[code](https://github.com/cityflow-project/CityFlow/)] [[project](https://cityflow-project.github.io/)]  [[doc](https://cityflow.readthedocs.io/en/latest/)]
 
 - **Background and Motivation**  
 The CityFlow dataset addresses the challenges of tracking vehicles across large urban areas using multiple traffic cameras. Traditional tracking methods face limitations due to the small spatial coverage and limited camera setups of existing benchmarks. CityFlow aims to solve this by providing a large-scale, multi-camera dataset designed for multi-target multi-camera (MTMC) tracking and vehicle re-identification (ReID).
@@ -125,7 +128,7 @@ The CityFlow dataset addresses the challenges of tracking vehicles across large 
   - **Real-World Challenges**: The dataset covers diverse environments and traffic conditions, incorporating issues such as motion blur and overlapping camera views.
   - **Evaluation Server**: An online platform for continuous performance comparison, providing a fair and transparent benchmarking process.
 
-### BAAI-VANJEE Roadside Dataset: Towards the Connected Automated Vehicle Highway Technologies in Challenging Environments of China
+### BAAI-VANJEE Roadside Dataset: Towards the Connected Automated Vehicle Highway Technologies in Challenging Environments of China [[paper](https://arxiv.org/abs/2105.14370)] [~~code~~] [[project](https://data.baai.ac.cn/data-set)] [~~project~~] 
 
 - **Background and Motivation**  
 This paper introduces the BAAI-VANJEE dataset, aimed at enhancing roadside perception for Connected Automated Vehicle Highway (CAVH) technologies. The dataset was created in response to the limitations of vehicle-based technologies that are difficult to scale. It provides high-quality LiDAR and RGB data collected from roadside sensors, addressing the need for datasets that can help improve detection tasks, including 2D/3D object detection and multi-sensor fusion in complex traffic environments.
@@ -138,9 +141,10 @@ This paper introduces the BAAI-VANJEE dataset, aimed at enhancing roadside perce
   - **Diverse Scenarios**: Includes data from diverse traffic conditions, providing a more comprehensive view of roadside perception.
   - **Public Availability**: The dataset is available online to support research in intelligent transportation and big data-driven innovation.
 
-### WIBAM  Weakly Supervised Training of Monocular 3D Object Detectors Using Wide Baseline Multi-view Traffic Camera Data
+### WIBAM  Weakly Supervised Training of Monocular 3D Object Detectors Using Wide Baseline Multi-view Traffic Camera Data [[paper](https://arxiv.org/abs/2110.10966)]  [~~code~~] [~~project~~] 
 
-### INTERACTION: An INTERnational, Adversarial and Cooperative moTION Dataset in Interactive Driving Scenarios with Semantic Maps [[paper]()] [[code]()] [[project]()]
+
+### INTERACTION: An INTERnational, Adversarial and Cooperative moTION Dataset in Interactive Driving Scenarios with Semantic Maps [[paper](https://arxiv.org/abs/1910.03088)] [~~code~~] [~~project~~] 
 
 - **Background and Motivation**  
 The paper introduces the INTERACTION dataset, designed to support the development of autonomous driving systems in complex, interactive scenarios. Existing datasets have limitations in terms of diversity, criticality, and the inclusion of driving behaviors from different cultures. This dataset addresses these gaps by providing a variety of challenging, real-world driving scenarios, capturing interactions among vehicles with different behaviors.
@@ -152,7 +156,7 @@ The paper introduces the INTERACTION dataset, designed to support the developmen
   - **Semantic Maps**: The dataset comes with detailed HD maps, which include traffic rules, lanelets, and road features, essential for motion prediction and planning tasks.
   - **Complete Interaction Data**: The dataset captures the interactions of all entities influencing vehicle behavior, enabling better modeling and prediction.
 
-### A9-Dataset: Multi-Sensor Infrastructure-Based Dataset for Mobility Research [[paper]()] [[code]()] [[project]()]
+### A9-Dataset: Multi-Sensor Infrastructure-Based Dataset for Mobility Research [[paper](https://ieeexplore.ieee.org/abstract/document/9827401)] [~~code~~] [[code](https://github.com/providentia-project/a9-dev-kit)] [[project]([https://a9-dataset.com](https://innovation-mobility.com/en/project-providentia/a9-dataset/))]
 
 - **Background and Motivation**  
 The paper introduces the A9-Dataset, collected from the Providentia++ test field in Germany, which aims to provide high-quality, real-world data for autonomous driving and mobility research. The dataset addresses the challenge of lacking diverse road scenarios captured by stationary multi-modal sensors, especially in infrastructure-based perception systems.
@@ -164,7 +168,7 @@ The paper introduces the A9-Dataset, collected from the Providentia++ test field
   - **Real-World Traffic**: The A9-Dataset features dense traffic data recorded under real-world conditions, making it useful for training and testing perception models for autonomous vehicles.
   - **Open Access**: The dataset is publicly available, promoting further research in autonomous driving and infrastructure-based perception systems.
 
-### IPS300+: A Challenging Multi-Modal Data Sets for Intersection Perception System [[paper]()] [[code]()] [[project]()]
+### IPS300+: A Challenging Multi-Modal Data Sets for Intersection Perception System [[paper](https://ieeexplore.ieee.org/abstract/document/9811699)]  [~~code~~]  [[project](http://www.openmpd.com/column/IPS300)]
 
 - **Background and Motivation**  
 The paper addresses the complexity and occlusion issues at urban intersections, which pose a significant challenge for autonomous driving systems. While on-board perception is limited in crowded, obstructed urban environments, the introduction of Cooperative Vehicle Infrastructure Systems (CVIS) offers a solution. However, there was a lack of open-source, multi-modal datasets for intersection perception, motivating the creation of the IPS300+ dataset.
@@ -176,7 +180,7 @@ The paper addresses the complexity and occlusion issues at urban intersections, 
   - **Feasible Solution for IPS Construction**: The dataset also presents an affordable approach to building Intersection Perception Systems (IPS), including a wireless solution for time synchronization and spatial calibration.
   - **Challenges in CVIS Algorithms**: The dataset introduces unique challenges for algorithms, particularly in multi-modal fusion and spatial coordination across different roadside units (RSUs), contributing valuable research avenues for CVIS and intersection perception tasks.
 
-### Rope3D: The Roadside Perception Dataset for Autonomous Driving [[paper]()] [[code]()] [[project]()]
+### Rope3D: The Roadside Perception Dataset for Autonomous Driving [[paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Ye_Rope3D_The_Roadside_Perception_Dataset_for_Autonomous_Driving_and_Monocular_CVPR_2022_paper.pdf)] [[code]()] [[project](https://thudair.baai.ac.cn/rope)] [~~project~~]
 
 - **Background and Motivation**  
 Current autonomous driving perception systems mainly focus on frontal-view data from vehicle-mounted sensors. However, this perspective creates limitations, such as blind spots and occlusions. Roadside perception systems, which provide a more comprehensive view of traffic scenarios, could enhance safety and prediction accuracy. The motivation behind this work is to address these challenges by introducing a roadside perception dataset, Rope3D, designed to improve 3D localization and object detection tasks for autonomous driving.
@@ -188,7 +192,7 @@ Current autonomous driving perception systems mainly focus on frontal-view data 
   - **New Evaluation Metrics**: Rope3D establishes a new benchmark for 3D roadside perception, proposing unique evaluation metrics and a devkit to measure task performance.  
   - **Adapting Existing Detection Models**: The paper customizes monocular 3D detection methods for roadside perception, overcoming challenges like varied camera viewpoints and increasing object density.
 
-### LUMPI: The Leibniz University Multi-Perspective Intersection Dataset [[paper]()] [[code]()] [[project]()]
+### LUMPI: The Leibniz University Multi-Perspective Intersection Dataset [[paper](https://ieeexplore.ieee.org/abstract/document/9827157)]  [~~code~~]  [[project](https://data.uni-hannover.de/cs_CZ/dataset/lumpi)] 
 
 - **Background and Motivation**  
 The paper introduces the LUMPI dataset, designed to address the limitations of single-view datasets used for autonomous driving. Traditional datasets often suffer from occlusions, making precise pose estimation difficult. LUMPI provides a multi-view dataset to improve accuracy in object detection and tracking by using multiple cameras and LiDAR sensors.
@@ -200,7 +204,9 @@ The paper introduces the LUMPI dataset, designed to address the limitations of s
   - **Traffic Participant Labels**: Precise labels for road users are included, along with a high-density reference point cloud, aiding in accurate trajectory generation and collaboration in data processing.
   - **Use Cases**: The dataset is valuable for research in traffic forecasting, anomaly detection, intent prediction, and junction mapping.
 
-### TUMTraf Intersection Dataset: All You Need for Urban 3D Camera-LiDAR Roadside Perception [[paper]()] [[code]()] [[project]()]
+
+
+### TUMTraf Intersection Dataset: All You Need for Urban 3D Camera-LiDAR Roadside Perception [[paper](https://ieeexplore.ieee.org/abstract/document/10422289)]  [~~code~~]  [[project](https://innovation-mobility.com/en/project-providentia/a9-dataset/)]
 
 - **Background and Motivation**  
 The TUMTraf Intersection Dataset addresses the need for high-quality 3D object detection in roadside infrastructure systems. Traditional vehicle-mounted sensors fail to cover complex intersection scenarios. This dataset was developed to enhance autonomous vehicle systems by providing labeled LiDAR point clouds and synchronized camera images from elevated roadside sensors, supporting 3D object detection tasks.
@@ -212,7 +218,7 @@ The TUMTraf Intersection Dataset addresses the need for high-quality 3D object d
   - **High-Class Diversity**: Includes ten object classes with a broad range of road users, including vulnerable pedestrians.
   - **Evaluation Baselines**: Offers multiple baselines for 3D object detection with monocular, LiDAR, and multi-modal setups, demonstrating robust performance in urban traffic perception tasks.
 
-### RoScenes: A Large-scale Multi-view 3D Dataset for Roadside Perception [[paper]()] [[code]()] [[project]()]
+### RoScenes: A Large-scale Multi-view 3D Dataset for Roadside Perception [[paper](https://link.springer.com/chapter/10.1007/978-3-031-72940-9_19)] [[paper](https://arxiv.org/abs/2405.09883)] [[code](https://github.com/roscenes/RoScenes)] [[project](https://roscenes.github.io./})]
 
 - **Background and Motivation**  
 The paper introduces RoScenes, the largest multi-view 3D dataset designed for roadside perception tasks. Traditional roadside perception datasets face limitations due to small-scale sensing areas and insufficient camera setups. RoScenes aims to address these challenges by offering a large-scale dataset with full scene coverage and crowded traffic, designed for 3D object detection and other advanced roadside perception tasks.
@@ -234,6 +240,11 @@ The paper introduces H-V2X, a large-scale dataset for highway roadside perceptio
   - **Multi-Sensor Integration**: The dataset includes synchronized data from cameras and radars, with vector map information, ensuring comprehensive BEV-based perception.
   - **Three Key Tasks**: Introduces three critical tasks for highway perception: BEV detection, MOT (Multi-Object Tracking), and trajectory prediction, supported by ground truth data and benchmarks.
   - **New Benchmark Methods**: The paper presents innovative methods incorporating HDMap data for improved BEV detection and trajectory prediction in highway scenarios.
+
+
+
+ [~~paper~~]  [~~code~~] [~~project~~] [[paper]()] [[code]()] [[project]()]  [[doc]()]
+ 
 
 ## :bookmark:V2V Datasets <a id="v2v-datasets-anchor"></a>
 
