@@ -6,25 +6,16 @@ This repository consolidates **Collaborative Perception (CP)** datasets for auto
 First, the repository introduces commonly used **autonomous driving simulation tools**, followed by categorizing **CP datasets** based on collaboration paradigms, presented in a tabular format. Each dataset is then described in detail, helping readers better understand the characteristics and applicable scenarios of each dataset. In addition, the repository also consolidates classic methods and cutting-edge research in **collaborative perception**, providing valuable insights into current trends and future directions in the field.
 
 
-### :link:Jump to:
-- ### [[Simulator]()]
-- ### [[Roadside Datasets]()]
-- ### [[V2V Datasets]()]
-- ### [[V2I Datasets]()]
-- ### [[V2X Datasets]()]
-- ### [[I2I Datasets]()]
-- ### [[Methods]()]
 
 
 ### :link:Jump to:
-- ### [Simulator](#simulator)
-- ### [Roadside Datasets](#roadside-datasets)
-- ### [V2V Datasets](#v2v-datasets)
-- ### [V2I Datasets](#v2i-datasets)
-- ### [V2X Datasets](#v2x-datasets)
-- ### [I2I Datasets](#i2i-datasets)
-- ### [Methods](#methods)
-- 
+- ### [Simulator](https://github.com/frankwnb/Collaborative-Perception-Datasets-for-Autonomous-Driving#simulator)
+- ### [Roadside Datasets](https://github.com/frankwnb/Collaborative-Perception-Datasets-for-Autonomous-Driving#roadside-datasets)
+- ### [V2V Datasets](https://github.com/frankwnb/Collaborative-Perception-Datasets-for-Autonomous-Driving#v2v-datasets)
+- ### [V2I Datasets](https://github.com/frankwnb/Collaborative-Perception-Datasets-for-Autonomous-Driving#v2i-datasets)
+- ### [V2X Datasets](https://github.com/frankwnb/Collaborative-Perception-Datasets-for-Autonomous-Driving#v2x-datasets)
+- ### [I2I Datasets](https://github.com/frankwnb/Collaborative-Perception-Datasets-for-Autonomous-Driving#i2i-datasets)
+- ### [Methods](https://github.com/frankwnb/Collaborative-Perception-Datasets-for-Autonomous-Driving#methods)
 
 ## :bookmark:Simulator 
 
