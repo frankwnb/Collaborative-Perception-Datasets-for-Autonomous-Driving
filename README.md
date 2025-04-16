@@ -1028,9 +1028,7 @@ Note: {Related} denotes that it is not a pure collaborative perception paper but
 - **MAIN** (Enhancing Multi-Robot Perception via Learned Data Association) [[paper](https://arxiv.org/abs/2107.00769)] [~~code~~]
 
 
+## Reference
 
-
-
-
-
+[[Collaborative Perception](https://github.com/Little-Podi/Collaborative_Perception?tab=readme-ov-file#bookmarkdataset-and-simulator)]
 
