@@ -8,6 +8,8 @@ First, the repository introduces commonly used **autonomous driving simulation t
 
 
 
+
+
 ### :link:Jump to:
 - ### [Method and Framework](#method-and-framework)
 - ### [Dataset and Simulator](#dataset-and-simulator)
@@ -854,6 +856,8 @@ The paper introduces the InScope dataset, aiming to address the issue of occlusi
 - **RCP-Bench** (RCP-Bench: Benchmarking Robustness for Collaborative Perception Under Diverse Corruptions) [~~paper~~] [~~code~~] [~~project~~]
 
 
+## Method and Framework
+
 ## :bookmark:Method and Framework
 
 This is the content of the "Method and Framework" section.
@@ -862,18 +866,5 @@ This is the content of the "Method and Framework" section.
 
 This is the content of the "Dataset and Simulator" section.
 
-
-
-
-
-## :bookmark:Methods
-
-
-## :bookmark:Simulator {#simulator}
-（内容...）
-
-## :bookmark:Roadside Datasets {#roadside-datasets}
-（内容...）
-（其他标题同理）
 
 
