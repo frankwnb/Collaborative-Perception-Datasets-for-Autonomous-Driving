@@ -242,7 +242,6 @@ The paper introduces H-V2X, a large-scale dataset for highway roadside perceptio
 
 
 
- [~~paper~~]  [~~code~~] [~~project~~] [[paper]()] [[code]()] [[project]()]  [[doc]()]
  
 
 ## :bookmark:V2V Datasets <a id="v2v-datasets-anchor"></a>
@@ -811,6 +810,7 @@ The paper introduces the InScope dataset, aiming to address the issue of occlusi
 - **AutoCastSim** (COOPERNAUT: End-to-End Driving with Cooperative Perception for Networked Vehicles) [[paper](https://arxiv.org/abs/2205.02222)] [[code](https://github.com/hangqiu/AutoCastSim)] [[project](https://utexas.app.box.com/v/coopernaut-dataset)]
 - **Mono3DVLT-V2X** (Mono3DVLT: Monocular-Video-Based 3D Visual Language Tracking) [~~paper~~] [~~code~~] [~~project~~]
 - **RCP-Bench** (RCP-Bench: Benchmarking Robustness for Collaborative Perception Under Diverse Corruptions) [~~paper~~] [~~code~~] [~~project~~]
+- **TCLF** 方法 (DAIR-V2X: A Large-Scale Dataset for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper](https://arxiv.org/abs/2204.05575)] [[code](https://github.com/AIR-THU/DAIR-V2X)]
 
 
 ## :bookmark:Methods <a id="methods-anchor"></a>
@@ -818,7 +818,12 @@ The paper introduces the InScope dataset, aiming to address the issue of occlusi
 以下内容来自[[Reference](https://github.com/Little-Podi/Collaborative_Perception?tab=readme-ov-file#bookmarkdataset-and-simulator)]，有待修改。
 
 Note: {Related} denotes that it is not a pure collaborative perception paper but has related content.
+
 Note: Sort by time in descending order
+
+### Infrastructure - Roadside perception
+- {Related} **BEVHeight** CVPR 2023 (BEVHeight: A Robust Framework for Vision-Based Roadside 3D Object Detection) [[paper](https://arxiv.org/abs/2303.08498)] [[code](https://github.com/ADLab-AutoDrive/BEVHeight)]
+- **Infra-Centric CP** ECCV 2024 (Rethinking the Role of Infrastructure in Collaborative Perception) [[paper](https://arxiv.org/abs/2410.11259)] [~~code~~]
 
 
 ### Cooperative perception communication
@@ -829,32 +834,118 @@ Note: Sort by time in descending order
 - **When2com**  CVPR 2020  (When2com: Multi-Agent Perception via Communication Graph Grouping) [[paper](https://arxiv.org/abs/2006.00176)] [[code](https://github.com/GT-RIPL/MultiAgentPerception)]
 - **MASH**  IROS 2021  (Overcoming Obstructions via Bandwidth-Limited Multi-Agent Spatial Handshaking) [[paper](https://arxiv.org/abs/2107.00771)] [[code](https://github.com/yifanlu0227/CoAlign)]
 - **IA-RCP** IJCAI 2022 (Robust Collaborative Perception against Communication Interruption) [[paper](https://learn-to-race.org/workshop-ai4ad-ijcai2022/papers.html)] [~~code~~]
-
-
+- **SyncNet** ECCV 2022 (Latency-Aware Collaborative Perception) [[paper](https://arxiv.org/abs/2207.08560)] [[code](https://github.com/MediaBrain-SJTU/SyncNet)]
+- **MATE** ICRA 2023 (Communication-Critical Planning via Multi-Agent Trajectory Exchange) [[paper](https://arxiv.org/abs/2303.06080)] [~~code~~]
+- **What2comm** MM 2023 (What2comm: Towards Communication-Efficient Collaborative Perception via Feature Decoupling) [[paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611699)] [~~code~~]
+- **How2comm** NeurIPS 2023 (How2comm: Communication-Efficient and Collaboration-Pragmatic Multi-Agent Perception) [[paper&review](https://openreview.net/forum?id=Dbaxm9ujq6)] [[code](https://github.com/ydk122024/How2comm)]
+- **CoBEVFlow** NeurIPS 2023 (Robust Asynchronous Collaborative 3D Detection via Bird's Eye View Flow) [[paper&review](https://openreview.net/forum?id=UHIDdtxmVS)] [[code](https://github.com/MediaBrain-SJTU/CoBEVFlow)]
+- **CodeFilling** CVPR 2024 (Communication-Efficient Collaborative Perception via Information Filling with Codebook) [[paper](https://arxiv.org/abs/2405.04966)] [[code](https://github.com/PhyllisH/CodeFilling)]
+- **ERMVP** CVPR 2024 (ERMVP: Communication-Efficient and Collaboration-Robust Multi-Vehicle Perception in Challenging Environments) [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_ERMVP_Communication-Efficient_and_Collaboration-Robust_Multi-Vehicle_Perception_in_Challenging_Environments_CVPR_2024_paper.html)] [[code](https://github.com/Terry9a/ERMVP)]
+- **MRCNet** CVPR 2024 (Multi-Agent Collaborative Perception via Motion-Aware Robust Communication Network) [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Hong_Multi-agent_Collaborative_Perception_via_Motion-aware_Robust_Communication_Network_CVPR_2024_paper.html)] [[code](https://github.com/IndigoChildren/collaborative-perception-MRCNet)]
+- **UMC** ICCV 2023 (UMC: A Unified Bandwidth-Efficient and Multi-Resolution Based Collaborative Perception Framework) [[paper](https://arxiv.org/abs/2303.12400)] [[code](https://github.com/ispc-lab/UMC)]
+- **CPPC** ICLR 2025 (Point Cluster: A Compact Message Unit for Communication-Efficient Collaborative Perception) [[paper&review](https://openreview.net/forum?id=54XlM8Clkg)] [~~code~~]
+- **DSRC** AAAI 2025 (DSRC: Learning Density-Insensitive and Semantic-Aware Collaborative Representation against Corruptions) [[paper](https://arxiv.org/abs/2412.10739)] [[code](https://github.com/Terry9a/DSRC)]
+- **CoDynTrust** ICRA 2025 (CoDynTrust: Robust Asynchronous Collaborative Perception via Dynamic Feature Trust Modulus) [[paper](https://arxiv.org/abs/2502.08169)] [[code](https://github.com/CrazyShout/CoDynTrust)]
+- **Where2comm**  NeurIPS 2022  (Where2comm: Efficient Collaborative Perception via Spatial Confidence Maps) [[paper&review](https://openreview.net/forum?id=dLL4KXzKUpS)] [[code](https://github.com/MediaBrain-SJTU/where2comm)]
 
 
 ### Spatial-temporal calibration and pose
+- **SparseAlign** (SparseAlign: A Fully Sparse Framework for Cooperative Object Detection) [[paper](https://arxiv.org/abs/2503.12982)] [~~code~~]
+- **SparseAlign** CVPR 2025 (SparseAlign: A Fully Sparse Framework for Cooperative Object Detection) [~~paper~~] [~~code~~]
 - **FreeAlign**  ICRA 2024 (Robust Collaborative Perception without External Localization and Clock Devices) [[paper](https://arxiv.org/abs/2405.02965)] [[code](https://github.com/MediaBrain-SJTU/FreeAlign)]
+- **CoAlign** ICRA 2023 (Robust Collaborative 3D Object Detection in Presence of Pose Errors) [[paper](https://arxiv.org/abs/2211.07214)] [[code](https://github.com/yifanlu0227/CoAlign)]
 - **MP-Pose**  ICRA 2022  (Multi-Robot Collaborative Perception with Graph Neural Networks) [[paper](https://arxiv.org/abs/2201.01760)] [~~code~~]
-
+- **FeaCo** MM 2023 (FeaCo: Reaching Robust Feature-Level Consensus in Noisy Pose Conditions) [[paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611880)] [[code](https://github.com/jmgu0212/FeaCo)]
 
 ### Multimodal Fusion Method
-
+- **CoHFF** CVPR 2024 (Collaborative Semantic Occupancy Prediction with Hybrid Feature Fusion in Connected Automated Vehicles) [[paper](https://arxiv.org/abs/2402.07635)] [~~code~~]
+- **BM2CP** {BM2CP: Efficient Collaborative Perception with LiDAR-Camera Modalities} [[paper&review](https://openreview.net/forum?id=uJqxFjF1xWp)] [[code](https://github.com/byzhaoAI/BM2CP)]
+- **V2X-R** CVPR 2025 (V2X-R: Cooperative LiDAR-4D Radar Fusion for 3D Object Detection with Denoising Diffusion) [[paper](https://arxiv.org/abs/2411.08402)] [[code](https://github.com/ylwhxht/V2X-R)]
 - **AttFuse** ICRA 2022  (OPV2V: An Open Benchmark Dataset and Fusion Pipeline for Perception with Vehicle-to-Vehicle Communication) [[paper](https://arxiv.org/abs/2109.07644)] [[code](https://github.com/DerrickXuNu/OpenCOOD)]
-
+- **AdaFusion** WACV 2023 (Adaptive Feature Fusion for Cooperative Perception Using LiDAR Point Clouds) [[paper](https://arxiv.org/abs/2208.00116)] [[code](https://github.com/DonghaoQiao/Adaptive-Feature-Fusion-for-Cooperative-Perception)]
+- **FFNet** NeurIPS 2023 (Flow-Based Feature Fusion for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper&review](https://openreview.net/forum?id=gsglrhvQxX)] [[code](https://github.com/haibao-yu/FFNet-VIC3D)]
+- **TransIFF** ICCV 2023 (TransIFF: An Instance-Level Feature Fusion Framework for Vehicle-Infrastructure Cooperative 3D Detection with Transformers) [[paper](https://openaccess.thecvf.com/content/ICCV2023/html/Chen_TransIFF_An_Instance-Level_Feature_Fusion_Framework_for_Vehicle-Infrastructure_Cooperative_3D_ICCV_2023_paper.html)] [~~code~~]
+- **Co-MTP** ICRA 2025 (Co-MTP: A Cooperative Trajectory Prediction Framework with Multi-Temporal Fusion for Autonomous Driving) [[paper](https://arxiv.org/abs/2502.16589)] [[code](https://github.com/xiaomiaozhang/Co-MTP)]
+- **ACCO** (Is Discretization Fusion All You Need for Collaborative Perception?) [[paper](https://arxiv.org/abs/2503.13946)] [[code](https://github.com/sidiangongyuan/ACCO)]
 
 ### End-to-end collaborative perception
-
+- **CoopDETR** ICRA 2025 (CoopDETR: A Unified Cooperative Perception Framework for 3D Detection via Object Query) [[paper](https://arxiv.org/abs/2502.19313)] [~~code~~]
 - **UniV2X** AAAI 2025 (End-to-End Autonomous Driving through V2X Cooperation) [[paper](https://arxiv.org/abs/2404.00717)] [[code](https://github.com/AIR-THU/UniV2X)]
+- **Coopernaut** CVPR 2022 (COOPERNAUT: End-to-End Driving with Cooperative Perception for Networked Vehicles) [[paper](https://arxiv.org/abs/2205.02222)] [[code](https://github.com/UT-Austin-RPL/Coopernaut)]
+- **SCOPE** ICCV 2023 (Spatio-Temporal Domain Awareness for Multi-Agent Collaborative Perception) [[paper](https://arxiv.org/abs/2307.13929)] [[code](https://github.com/starfdu1418/SCOPE)]
 
-### Framework
-
+### Framework - Hetero-Modal
+- **CoopDETR** ICRA 2025 (CoopDETR: A Unified Cooperative Perception Framework for 3D Detection via Object Query) [[paper](https://arxiv.org/abs/2502.19313)] [~~code~~]
 - **HEAL** ICLR 2024 (An Extensible Framework for Open Heterogeneous Collaborative Perception) [[paper&review](https://openreview.net/forum?id=KkrDUGIASk)] [[code](https://github.com/yifanlu0227/HEAL)]
+- **MACP** WACV 2024 (MACP: Efficient Model Adaptation for Cooperative Perception) [[paper](https://arxiv.org/abs/2310.16870)] [[code](https://github.com/PurdueDigitalTwin/MACP)]
+- **MAMP** ICRA 2023 (Model-Agnostic Multi-Agent Perception Framework) [[paper](https://arxiv.org/abs/2203.13168)] [[code](https://github.com/DerrickXuNu/model_anostic)]
+- **HM-ViT** ICCV 2023 (HM-ViT: Hetero-Modal Vehicle-to-Vehicle Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2304.10628)] [[code](https://github.com/XHwind/HM-ViT)]
+- **SCOPE** ICCV 2023 (Spatio-Temporal Domain Awareness for Multi-Agent Collaborative Perception) [[paper](https://arxiv.org/abs/2307.13929)] [[code](https://github.com/starfdu1418/SCOPE)]
+- **Hetecooper** ECCV 2024 (Hetecooper: Feature Collaboration Graph for Heterogeneous Collaborative Perception) [[paper](https://eccv.ecva.net/virtual/2024/poster/2467)] [~~code~~]
+- **STAMP** ICLR 2025 (STAMP: Scalable Task- And Model-Agnostic Collaborative Perception) [[paper&review](https://openreview.net/forum?id=8NdNniulYE)] [[code](https://github.com/taco-group/STAMP)]
+
+### Transformer related methods
+- **V2XFormer**  AAAI 2024(DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving) [[paper](https://arxiv.org/abs/2304.01168)] [[code](https://github.com/tianqi-wang1996/DeepAccident)]
+- **CoBEVT** CoRL 2022 (CoBEVT: Cooperative Bird's Eye View Semantic Segmentation with Sparse Transformers) [[paper&review](https://openreview.net/forum?id=PAFEQQtDf8s)] [[code](https://github.com/DerrickXuNu/CoBEVT)]
+- **V2X-ViTv2** V2X-ViTv2: Improved Vision Transformers for Vehicle-to-Everything Cooperative Perception  [[paper]()] [[code]()] [[project]()]  [[doc]()]
+- **V2X-ViT** ECCV 2022 (V2X-ViT: Vehicle-to-Everything Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2203.10638)] [[code](https://github.com/DerrickXuNu/v2x-vit)]
+- **HM-ViT** ICCV 2023 (HM-ViT: Hetero-Modal Vehicle-to-Vehicle Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2304.10628)] [[code](https://github.com/XHwind/HM-ViT)]
+
+### 3D Detection
+- **R&B-POP** ICLR 2025 (Learning 3D Perception from Others' Predictions) [[paper&review](https://openreview.net/forum?id=Ylk98vWQuQ)] [[code](https://github.com/jinsuyoo/rnb-pop)]
+- **CoCa3D** CVPR 2023 (Collaboration Helps Camera Overtake LiDAR in 3D Detection) [[paper](https://arxiv.org/abs/2303.13560)] [[code](https://github.com/MediaBrain-SJTU/CoCa3D)]
+- **SCOPE** ICCV 2023 (Spatio-Temporal Domain Awareness for Multi-Agent Collaborative Perception) [[paper](https://arxiv.org/abs/2307.13929)] [[code](https://github.com/starfdu1418/SCOPE)]
+- **DI-V2X** NeurIPS 2024  AAAI 2024(DI-V2X: Learning Domain-Invariant Representation for Vehicle-Infrastructure Collaborative 3D Object Detection) [[paper](https://arxiv.org/abs/2312.15742)] [[code](https://github.com/Serenos/DI-V2X)]
+- **DSRC** AAAI 2025 (DSRC: Learning Density-Insensitive and Semantic-Aware Collaborative Representation against Corruptions) [[paper](https://arxiv.org/abs/2412.10739)] [[code](https://github.com/Terry9a/DSRC)]
+- **CoopDet3D** CVPR 2024 (TUMTraf V2X Cooperative Perception Dataset) [[paper](https://arxiv.org/abs/2403.01316)] [[code](https://github.com/tum-traffic-dataset/coopdet3d)]
+
+###  Semantic Segmentation
+- **CoGMP** CVPR 2025 (Generative Map Priors for Collaborative BEV Semantic Segmentation) [~~paper~~] [~~code~~]
+- **CoBEVT** CoRL 2022 (CoBEVT: Cooperative Bird's Eye View Semantic Segmentation with Sparse Transformers) [[paper&review](https://openreview.net/forum?id=PAFEQQtDf8s)] [[code](https://github.com/DerrickXuNu/CoBEVT)]
+
+###  Tracking
+- **FF-Tracking** CVPR 2023 (V2X-Seq: The Large-Scale Sequential Dataset for the Vehicle-Infrastructure Cooperative Perception and Forecasting) [[paper](https://arxiv.org/abs/2305.05938)] [[code](https://github.com/AIR-THU/DAIR-V2X-Seq)]
+- **DMSTrack** ICRA 2024 (Probabilistic 3D Multi-Object Cooperative Tracking for Autonomous Driving via Differentiable Multi-Sensor Kalman Filter) [[paper](https://arxiv.org/abs/2309.14655)] [[code](https://github.com/eddyhkchiu/DMSTrack)]
+
+###  Forecasting
+- **V2X-Graph** NeurIPS 2024 (Learning Cooperative Trajectory Representations for Motion Forecasting) [[paper](https://arxiv.org/abs/2311.00371)] [[code](https://github.com/AIR-THU/V2X-Graph)]
+- **Co-MTP** ICRA 2025 (Co-MTP: A Cooperative Trajectory Prediction Framework with Multi-Temporal Fusion for Autonomous Driving) [[paper](https://arxiv.org/abs/2502.16589)] [[code](https://github.com/xiaomiaozhang/Co-MTP)]
+
+
+### Scene Completion
+- **STAR** CoRL 2022 (Multi-Robot Scene Completion: Towards Task-Agnostic Collaborative Perception) [[paper&review](https://openreview.net/forum?id=hW0tcXOJas2)] [[code](https://github.com/coperception/star)]
+
+###  Bird's Eye View
+- **CP-Guard**  AAAI 2025  (CP-Guard: Malicious Agent Detection and Defense in Collaborative Bird's Eye View Perception) [[paper](https://arxiv.org/abs/2412.12000)] [~~code~~]
+- **CoBEVFlow** NeurIPS 2023 (Robust Asynchronous Collaborative 3D Detection via Bird's Eye View Flow) [[paper&review](https://openreview.net/forum?id=UHIDdtxmVS)] [[code](https://github.com/MediaBrain-SJTU/CoBEVFlow)]
+
+### Identification - Selection
+- {Related} **DMGM** ICRA 2023 (Deep Masked Graph Matching for Correspondence Identification in Collaborative Perception) [[paper](https://arxiv.org/abs/2303.07555)] [[code](https://github.com/gaopeng5/DMGM)]
+- **WNT** ICRA 2023 (We Need to Talk: Identifying and Overcoming Communication-Critical Scenarios for Self-Driving) [[paper](https://arxiv.org/abs/2305.04352)] [~~code~~]
+- **CMiMC**  AAAI 2024(What Makes Good Collaborative Views? Contrastive Mutual Information Maximization for Multi-Agent Perception) [[paper](https://arxiv.org/abs/2403.10068)] [[code](https://github.com/77SWF/CMiMC)]
+- **Direct-CP** ICRA 2025 (Direct-CP: Directed Collaborative Perception for Connected and Autonomous Vehicles via Proactive Attention) [[paper](https://arxiv.org/abs/2409.08840)] [~~code~~]
+
+### Sim2Real 
+- **DUSA** MM 2023 (DUSA: Decoupled Unsupervised Sim2Real Adaptation for Vehicle-to-Everything Collaborative Perception) [[paper](https://arxiv.org/abs/2310.08117)] [[code](https://github.com/refkxh/DUSA)]
+- **MPDA** ICRA 2023 (Bridging the Domain Gap for Multi-Agent Perception) [[paper](https://arxiv.org/abs/2210.08451)] [[code](https://github.com/DerrickXuNu/MPDA)]
+- **V2X-DG** ICRA 2025 (V2X-DG: Domain Generalization for Vehicle-to-Everything Cooperative Perception) [[paper](https://arxiv.org/abs/2503.15435)] [~~code~~]
+
+
+### Uncertainty Quantification
+- **Double-M Quantification** ICRA 2023 (Uncertainty Quantification of Collaborative Detection for Self-Driving) [[paper](https://arxiv.org/abs/2209.08162)] [[code](https://github.com/coperception/double-m-quantification)]
+
+### 3D Representation
+- {Related} **CO3** ICLR 2023 (CO3: Cooperative Unsupervised 3D Representation Learning for Autonomous Driving) [[paper&review](https://openreview.net/forum?id=QUaDoIdgo0)] [[code](https://github.com/Runjian-Chen/CO3)]
+
+###  Reconstruction
+- **CORE** ICCV 2023 (CORE: Cooperative Reconstruction for Multi-Agent Perception) [[paper](https://arxiv.org/abs/2307.11514)] [[code](https://github.com/zllxot/CORE)]
+
+### Robustness 
+- **CoDynTrust** ICRA 2025 (CoDynTrust: Robust Asynchronous Collaborative Perception via Dynamic Feature Trust Modulus) [[paper](https://arxiv.org/abs/2502.08169)] [[code](https://github.com/CrazyShout/CoDynTrust)]
 
 ### Adversarial Attacks
-
 - **Adversarial V2V**  ICCV 2021 (Adversarial Attacks On Multi-Agent Communication) [[paper](https://arxiv.org/abs/2101.06560)] [~~code~~]
-
+- **ROBOSAC** ICCV 2023 (Among Us: Adversarially Robust Collaborative Perception by Consensus) [[paper](https://arxiv.org/abs/2303.09495)] [[code](https://github.com/coperception/ROBOSAC)]
 
 ### Privacy and security
 - **CP-Guard**  AAAI 2025  (CP-Guard: Malicious Agent Detection and Defense in Collaborative Bird's Eye View Perception) [[paper](https://arxiv.org/abs/2412.12000)] [~~code~~]
@@ -863,7 +954,6 @@ Note: Sort by time in descending order
 
 ### Selected Preprint
 
-- **ACCO** (Is Discretization Fusion All You Need for Collaborative Perception?) [[paper](https://arxiv.org/abs/2503.13946)] [[code](https://github.com/sidiangongyuan/ACCO)]
 - **AR2VP** (Dynamic V2X Autonomous Perception from Road-to-Vehicle Vision) [[paper](https://arxiv.org/abs/2310.19113)] [[code](https://github.com/tjy1423317192/AP2VP)]
 - **CPPC** (Point Cluster: A Compact Message Unit for Communication-Efficient Collaborative Perception) [[paper&review](https://openreview.net/forum?id=54XlM8Clkg)] [~~code~~]
 - **CMP** (CMP: Cooperative Motion Prediction with Multi-Agent Communication) [[paper](https://arxiv.org/abs/2403.17916)] [~~code~~]
@@ -894,7 +984,6 @@ Note: Sort by time in descending order
 - **RG-Attn** (RG-Attn: Radian Glue Attention for Multi-Modality Multi-Agent Cooperative Perception) [[paper](https://arxiv.org/abs/2501.16803)] [~~code~~]
 - **RoCo-Sim** (RoCo-Sim: Enhancing Roadside Collaborative Perception through Foreground Simulation) [[paper](https://arxiv.org/abs/2503.10410)] [[code](https://github.com/duyuwen-duen/RoCo-Sim)]
 - **SiCP** (SiCP: Simultaneous Individual and Cooperative Perception for 3D Object Detection in Connected and Automated Vehicles) [[paper](https://arxiv.org/abs/2312.04822)] [[code](https://github.com/DarrenQu/SiCP)]
-- **SparseAlign** (SparseAlign: A Fully Sparse Framework for Cooperative Object Detection) [[paper](https://arxiv.org/abs/2503.12982)] [~~code~~]
 - {Related} **TYP** (Transfer Your Perspective: Controllable 3D Generation from Any Viewpoint in a Driving Scene) [[paper](https://arxiv.org/abs/2502.06682)] [~~code~~]
 - **VIMI** (VIMI: Vehicle-Infrastructure Multi-View Intermediate Fusion for Camera-Based 3D Object Detection) [[paper](https://arxiv.org/abs/2303.10975)] [[code](https://github.com/Bosszhe/VIMI)]
 - **V2V-LLM** (V2V-LLM: Vehicle-to-Vehicle Cooperative Autonomous Driving with Multi-Modal Large Language Models) [[paper](https://arxiv.org/abs/2502.09980)] [[code](https://github.com/eddyhkchiu/V2VLLM)]
@@ -905,146 +994,21 @@ Note: Sort by time in descending order
 - **V2X-PC** (V2X-PC: Vehicle-to-Everything Collaborative Perception via Point Cluster) [[paper](https://arxiv.org/abs/2403.16635)] [~~code~~]
 - **V2X-ReaLO** (V2X-ReaLO: An Open Online Framework and Dataset for Cooperative Perception in Reality) [[paper](https://arxiv.org/abs/2503.10034)] [~~code~~]
 
-### CVPR 2025
 
-- **CoGMP** (Generative Map Priors for Collaborative BEV Semantic Segmentation) [~~paper~~] [~~code~~]
-- **PolyInter** (One is Plenty: A Polymorphic Feature Interpreter for Immutable Heterogeneous Collaborative Perception) [[paper](https://arxiv.org/abs/2411.16799)] [~~code~~]
-- **SparseAlign** (SparseAlign: A Fully Sparse Framework for Cooperative Object Detection) [~~paper~~] [~~code~~]
-- **V2X-R** (V2X-R: Cooperative LiDAR-4D Radar Fusion for 3D Object Detection with Denoising Diffusion) [[paper](https://arxiv.org/abs/2411.08402)] [[code](https://github.com/ylwhxht/V2X-R)]
-
-### ICLR 2025
-
-- **CPPC** (Point Cluster: A Compact Message Unit for Communication-Efficient Collaborative Perception) [[paper&review](https://openreview.net/forum?id=54XlM8Clkg)] [~~code~~]
-- **R&B-POP** (Learning 3D Perception from Others' Predictions) [[paper&review](https://openreview.net/forum?id=Ylk98vWQuQ)] [[code](https://github.com/jinsuyoo/rnb-pop)]
-- **STAMP** (STAMP: Scalable Task- And Model-Agnostic Collaborative Perception) [[paper&review](https://openreview.net/forum?id=8NdNniulYE)] [[code](https://github.com/taco-group/STAMP)]
-  
-###
-
-- **DSRC** AAAI 2025 (DSRC: Learning Density-Insensitive and Semantic-Aware Collaborative Representation against Corruptions) [[paper](https://arxiv.org/abs/2412.10739)] [[code](https://github.com/Terry9a/DSRC)]
-
-### ICRA 2025
-
-- **CoDynTrust** (CoDynTrust: Robust Asynchronous Collaborative Perception via Dynamic Feature Trust Modulus) [[paper](https://arxiv.org/abs/2502.08169)] [[code](https://github.com/CrazyShout/CoDynTrust)]
-- **CoopDETR** (CoopDETR: A Unified Cooperative Perception Framework for 3D Detection via Object Query) [[paper](https://arxiv.org/abs/2502.19313)] [~~code~~]
-- **Co-MTP** (Co-MTP: A Cooperative Trajectory Prediction Framework with Multi-Temporal Fusion for Autonomous Driving) [[paper](https://arxiv.org/abs/2502.16589)] [[code](https://github.com/xiaomiaozhang/Co-MTP)]
-- **Direct-CP** (Direct-CP: Directed Collaborative Perception for Connected and Autonomous Vehicles via Proactive Attention) [[paper](https://arxiv.org/abs/2409.08840)] [~~code~~]
-- **V2X-DG** (V2X-DG: Domain Generalization for Vehicle-to-Everything Cooperative Perception) [[paper](https://arxiv.org/abs/2503.15435)] [~~code~~]
-
-### CVPR 2024
-
-- **CoHFF** (Collaborative Semantic Occupancy Prediction with Hybrid Feature Fusion in Connected Automated Vehicles) [[paper](https://arxiv.org/abs/2402.07635)] [~~code~~]
-- **CoopDet3D** (TUMTraf V2X Cooperative Perception Dataset) [[paper](https://arxiv.org/abs/2403.01316)] [[code](https://github.com/tum-traffic-dataset/coopdet3d)]
-- **CodeFilling** (Communication-Efficient Collaborative Perception via Information Filling with Codebook) [[paper](https://arxiv.org/abs/2405.04966)] [[code](https://github.com/PhyllisH/CodeFilling)]
-- **ERMVP** (ERMVP: Communication-Efficient and Collaboration-Robust Multi-Vehicle Perception in Challenging Environments) [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_ERMVP_Communication-Efficient_and_Collaboration-Robust_Multi-Vehicle_Perception_in_Challenging_Environments_CVPR_2024_paper.html)] [[code](https://github.com/Terry9a/ERMVP)]
-- **MRCNet** (Multi-Agent Collaborative Perception via Motion-Aware Robust Communication Network) [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Hong_Multi-agent_Collaborative_Perception_via_Motion-aware_Robust_Communication_Network_CVPR_2024_paper.html)] [[code](https://github.com/IndigoChildren/collaborative-perception-MRCNet)]
-
-### ECCV 2024
-
-- **Hetecooper** (Hetecooper: Feature Collaboration Graph for Heterogeneous Collaborative Perception) [[paper](https://eccv.ecva.net/virtual/2024/poster/2467)] [~~code~~]
-- **Infra-Centric CP** (Rethinking the Role of Infrastructure in Collaborative Perception) [[paper](https://arxiv.org/abs/2410.11259)] [~~code~~]
-
-### NeurIPS 2024
-
-- **V2X-Graph** (Learning Cooperative Trajectory Representations for Motion Forecasting) [[paper](https://arxiv.org/abs/2311.00371)] [[code](https://github.com/AIR-THU/V2X-Graph)]
+- 其他=================
 
 
-### AAAI 2024
-
-- **CMiMC** (What Makes Good Collaborative Views? Contrastive Mutual Information Maximization for Multi-Agent Perception) [[paper](https://arxiv.org/abs/2403.10068)] [[code](https://github.com/77SWF/CMiMC)]
-- **DI-V2X** (DI-V2X: Learning Domain-Invariant Representation for Vehicle-Infrastructure Collaborative 3D Object Detection) [[paper](https://arxiv.org/abs/2312.15742)] [[code](https://github.com/Serenos/DI-V2X)]
-- **V2XFormer** (DeepAccident: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving) [[paper](https://arxiv.org/abs/2304.01168)] [[code](https://github.com/tianqi-wang1996/DeepAccident)]
-
-### WACV 2024
-
-- **MACP** (MACP: Efficient Model Adaptation for Cooperative Perception) [[paper](https://arxiv.org/abs/2310.16870)] [[code](https://github.com/PurdueDigitalTwin/MACP)]
-
-### ICRA 2024
-
-- **DMSTrack** (Probabilistic 3D Multi-Object Cooperative Tracking for Autonomous Driving via Differentiable Multi-Sensor Kalman Filter) [[paper](https://arxiv.org/abs/2309.14655)] [[code](https://github.com/eddyhkchiu/DMSTrack)]
-
-### CVPR 2023
-
-- {Related} **BEVHeight** (BEVHeight: A Robust Framework for Vision-Based Roadside 3D Object Detection) [[paper](https://arxiv.org/abs/2303.08498)] [[code](https://github.com/ADLab-AutoDrive/BEVHeight)]
-- **CoCa3D** (Collaboration Helps Camera Overtake LiDAR in 3D Detection) [[paper](https://arxiv.org/abs/2303.13560)] [[code](https://github.com/MediaBrain-SJTU/CoCa3D)]
-- **FF-Tracking** (V2X-Seq: The Large-Scale Sequential Dataset for the Vehicle-Infrastructure Cooperative Perception and Forecasting) [[paper](https://arxiv.org/abs/2305.05938)] [[code](https://github.com/AIR-THU/DAIR-V2X-Seq)]
-
-### NeurIPS 2023
-
-- **CoBEVFlow** (Robust Asynchronous Collaborative 3D Detection via Bird's Eye View Flow) [[paper&review](https://openreview.net/forum?id=UHIDdtxmVS)] [[code](https://github.com/MediaBrain-SJTU/CoBEVFlow)]
-- **FFNet** (Flow-Based Feature Fusion for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper&review](https://openreview.net/forum?id=gsglrhvQxX)] [[code](https://github.com/haibao-yu/FFNet-VIC3D)]
-- **How2comm** (How2comm: Communication-Efficient and Collaboration-Pragmatic Multi-Agent Perception) [[paper&review](https://openreview.net/forum?id=Dbaxm9ujq6)] [[code](https://github.com/ydk122024/How2comm)]
-
-### ICCV 2023
-
-- **CORE** (CORE: Cooperative Reconstruction for Multi-Agent Perception) [[paper](https://arxiv.org/abs/2307.11514)] [[code](https://github.com/zllxot/CORE)]
-- **HM-ViT** (HM-ViT: Hetero-Modal Vehicle-to-Vehicle Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2304.10628)] [[code](https://github.com/XHwind/HM-ViT)]
-- **ROBOSAC** (Among Us: Adversarially Robust Collaborative Perception by Consensus) [[paper](https://arxiv.org/abs/2303.09495)] [[code](https://github.com/coperception/ROBOSAC)]
-- **SCOPE** (Spatio-Temporal Domain Awareness for Multi-Agent Collaborative Perception) [[paper](https://arxiv.org/abs/2307.13929)] [[code](https://github.com/starfdu1418/SCOPE)]
-- **TransIFF** (TransIFF: An Instance-Level Feature Fusion Framework for Vehicle-Infrastructure Cooperative 3D Detection with Transformers) [[paper](https://openaccess.thecvf.com/content/ICCV2023/html/Chen_TransIFF_An_Instance-Level_Feature_Fusion_Framework_for_Vehicle-Infrastructure_Cooperative_3D_ICCV_2023_paper.html)] [~~code~~]
-- **UMC** (UMC: A Unified Bandwidth-Efficient and Multi-Resolution Based Collaborative Perception Framework) [[paper](https://arxiv.org/abs/2303.12400)] [[code](https://github.com/ispc-lab/UMC)]
-
-### ICLR 2023
-
-- {Related} **CO3** (CO3: Cooperative Unsupervised 3D Representation Learning for Autonomous Driving) [[paper&review](https://openreview.net/forum?id=QUaDoIdgo0)] [[code](https://github.com/Runjian-Chen/CO3)]
-
-### CoRL 2023
-
-- **BM2CP** {BM2CP: Efficient Collaborative Perception with LiDAR-Camera Modalities} [[paper&review](https://openreview.net/forum?id=uJqxFjF1xWp)] [[code](https://github.com/byzhaoAI/BM2CP)]
-
-### MM 2023
-
-- **DUSA** (DUSA: Decoupled Unsupervised Sim2Real Adaptation for Vehicle-to-Everything Collaborative Perception) [[paper](https://arxiv.org/abs/2310.08117)] [[code](https://github.com/refkxh/DUSA)]
-- **FeaCo** (FeaCo: Reaching Robust Feature-Level Consensus in Noisy Pose Conditions) [[paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611880)] [[code](https://github.com/jmgu0212/FeaCo)]
-- **What2comm** (What2comm: Towards Communication-Efficient Collaborative Perception via Feature Decoupling) [[paper](https://dl.acm.org/doi/abs/10.1145/3581783.3611699)] [~~code~~]
-
-### WACV 2023
-
-- **AdaFusion** (Adaptive Feature Fusion for Cooperative Perception Using LiDAR Point Clouds) [[paper](https://arxiv.org/abs/2208.00116)] [[code](https://github.com/DonghaoQiao/Adaptive-Feature-Fusion-for-Cooperative-Perception)]
-
-### ICRA 2023
-
-- **CoAlign** (Robust Collaborative 3D Object Detection in Presence of Pose Errors) [[paper](https://arxiv.org/abs/2211.07214)] [[code](https://github.com/yifanlu0227/CoAlign)]
-- {Related} **DMGM** (Deep Masked Graph Matching for Correspondence Identification in Collaborative Perception) [[paper](https://arxiv.org/abs/2303.07555)] [[code](https://github.com/gaopeng5/DMGM)]
-- **Double-M Quantification** (Uncertainty Quantification of Collaborative Detection for Self-Driving) [[paper](https://arxiv.org/abs/2209.08162)] [[code](https://github.com/coperception/double-m-quantification)]
-- **MAMP** (Model-Agnostic Multi-Agent Perception Framework) [[paper](https://arxiv.org/abs/2203.13168)] [[code](https://github.com/DerrickXuNu/model_anostic)]
-- **MATE** (Communication-Critical Planning via Multi-Agent Trajectory Exchange) [[paper](https://arxiv.org/abs/2303.06080)] [~~code~~]
-- **MPDA** (Bridging the Domain Gap for Multi-Agent Perception) [[paper](https://arxiv.org/abs/2210.08451)] [[code](https://github.com/DerrickXuNu/MPDA)]
-- **WNT** (We Need to Talk: Identifying and Overcoming Communication-Critical Scenarios for Self-Driving) [[paper](https://arxiv.org/abs/2305.04352)] [~~code~~]
-
-### CVPR 2022
-
-- **Coopernaut** (COOPERNAUT: End-to-End Driving with Cooperative Perception for Networked Vehicles) [[paper](https://arxiv.org/abs/2205.02222)] [[code](https://github.com/UT-Austin-RPL/Coopernaut)]
 - {Related} **LAV** (Learning from All Vehicles) [[paper](https://arxiv.org/abs/2203.11934)] [[code](https://github.com/dotchen/LAV)]
-- **TCLF** (DAIR-V2X: A Large-Scale Dataset for Vehicle-Infrastructure Cooperative 3D Object Detection) [[paper](https://arxiv.org/abs/2204.05575)] [[code](https://github.com/AIR-THU/DAIR-V2X)]
 
-### NeurIPS 2022
-
-- **Where2comm** (Where2comm: Efficient Collaborative Perception via Spatial Confidence Maps) [[paper&review](https://openreview.net/forum?id=dLL4KXzKUpS)] [[code](https://github.com/MediaBrain-SJTU/where2comm)]
-
-### ECCV 2022
-
-- **SyncNet** (Latency-Aware Collaborative Perception) [[paper](https://arxiv.org/abs/2207.08560)] [[code](https://github.com/MediaBrain-SJTU/SyncNet)]
-- **V2X-ViT** (V2X-ViT: Vehicle-to-Everything Cooperative Perception with Vision Transformer) [[paper](https://arxiv.org/abs/2203.10638)] [[code](https://github.com/DerrickXuNu/v2x-vit)]
-
-### CoRL 2022
-
-- **CoBEVT** (CoBEVT: Cooperative Bird's Eye View Semantic Segmentation with Sparse Transformers) [[paper&review](https://openreview.net/forum?id=PAFEQQtDf8s)] [[code](https://github.com/DerrickXuNu/CoBEVT)]
-- **STAR** (Multi-Robot Scene Completion: Towards Task-Agnostic Collaborative Perception) [[paper&review](https://openreview.net/forum?id=hW0tcXOJas2)] [[code](https://github.com/coperception/star)]
-
-
-
+- **PolyInter** CVPR 2025 (One is Plenty: A Polymorphic Feature Interpreter for Immutable Heterogeneous Collaborative Perception) [[paper](https://arxiv.org/abs/2411.16799)] [~~code~~]
 
 - **CRCNet**  MM 2022  (Complementarity-Enhanced and Redundancy-Minimized Collaboration Network for Multi-agent Perception) [[paper](https://dl.acm.org/doi/abs/10.1145/3503161.3548197)] [~~code~~]
 
-
 - **DiscoNet** NeurIPS 2021 (Learning Distilled Collaboration Graph for Multi-Agent Perception) [[paper&review](https://openreview.net/forum?id=ZRcjSOmYraB)] [[code](https://github.com/ai4ce/DiscoNet)]
-
 
 - **DSDNet** ECCV 2020 (DSDNet: Deep Structured Self-Driving Network) [[paper](https://arxiv.org/abs/2008.06041)] [~~code~~]
 
-
 - **MAIN** ICRA 2020 (Enhancing Multi-Robot Perception via Learned Data Association) [[paper](https://arxiv.org/abs/2107.00769)] [~~code~~]
-
 
 ## Reference
 
@@ -1054,4 +1018,5 @@ Note: Sort by time in descending order
   
 [~~code~~]  [~~paper~~]  [~~project~~]
 
+ [~~paper~~]  [~~code~~] [~~project~~] [[paper]()] [[code]()] [[project]()]  [[doc]()]
 
