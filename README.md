@@ -954,6 +954,61 @@ Note: Sort by time in descending order
 
 ### Selected Preprint
 
+- Dec 2025
+- Nov 2025
+- Oct 2025
+- Sep 2025
+- Aug 2025
+- Jul 202
+- Jun 202
+- May 2025
+- Apr 2025
+
+
+
+- Mar 2025
+- **V2X-ReaLO** (V2X-ReaLO: An Open Online Framework and Dataset for Cooperative Perception in Reality) [[paper](https://arxiv.org/abs/2503.10034)] [~~code~~]
+
+- Feb 2025
+
+- Jan 2025
+
+- Dec 2024
+
+- Nov 2024
+
+- Oct 2024
+
+- Sep 2024
+
+- Aug 2024
+
+- Jul 2024
+
+- Jun 2024
+- May 2024
+- Apr 2024
+- Mar 2024
+
+- **V2X-PC** (V2X-PC: Vehicle-to-Everything Collaborative Perception via Point Cluster) [[paper](https://arxiv.org/abs/2403.16635)] [~~code~~]
+
+- Feb 2024
+- Jan 2024
+- Dec 2023
+- Nov 2023
+- Oct 2023
+- Sep 2023
+- Aug 2023
+- Jul 2023
+- Jun 2023
+- May 2023
+- Apr 2023
+- Mar 2023
+- Feb 2023
+- Jan 2023
+
+
+
 - **AR2VP** (Dynamic V2X Autonomous Perception from Road-to-Vehicle Vision) [[paper](https://arxiv.org/abs/2310.19113)] [[code](https://github.com/tjy1423317192/AP2VP)]
 - **CPPC** (Point Cluster: A Compact Message Unit for Communication-Efficient Collaborative Perception) [[paper&review](https://openreview.net/forum?id=54XlM8Clkg)] [~~code~~]
 - **CMP** (CMP: Cooperative Motion Prediction with Multi-Agent Communication) [[paper](https://arxiv.org/abs/2403.17916)] [~~code~~]
@@ -991,8 +1046,6 @@ Note: Sort by time in descending order
 - **V2X-DGPE** (V2X-DGPE: Addressing Domain Gaps and Pose Errors for Robust Collaborative 3D Object Detection) [[paper](https://arxiv.org/abs/2501.02363)] [[code](https://github.com/wangsch10/V2X-DGPE)]
 - **V2X-DGW** (V2X-DGW: Domain Generalization for Multi-Agent Perception under Adverse Weather Conditions) [[paper](https://arxiv.org/abs/2403.11371)] [~~code~~]
 - **V2X-M2C** (V2X-M2C: Efficient Multi-Module Collaborative Perception with Two Connections) [[paper](https://arxiv.org/abs/2407.11546)] [~~code~~]
-- **V2X-PC** (V2X-PC: Vehicle-to-Everything Collaborative Perception via Point Cluster) [[paper](https://arxiv.org/abs/2403.16635)] [~~code~~]
-- **V2X-ReaLO** (V2X-ReaLO: An Open Online Framework and Dataset for Cooperative Perception in Reality) [[paper](https://arxiv.org/abs/2503.10034)] [~~code~~]
 
 
 - 其他=================
