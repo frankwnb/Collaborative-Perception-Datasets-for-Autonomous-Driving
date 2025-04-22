@@ -1059,18 +1059,14 @@ Our survey paper is at[Collaborative Perception Datasets for Autonomous Driving:
 If you find our repository helpful, please consider citing our work:
 
 > Wang, Naibang, et al. **"Collaborative Perception Datasets for Autonomous Driving: A Review."** arXiv preprint arXiv:2504.12696, 2025.
-
-```bibtex
+```BibTeX
 @article{wang2025collaborative,
   title={Collaborative Perception Datasets for Autonomous Driving: A Review},
   author={Wang, Naibang and Shang, Deyong and Gong, Yan and Hu, Xiaoxi and Song, Ziying and Yang, Lei and Huang, Yuhan and Wang, Xiaoyu and Lu, Jianli},
   journal={arXiv preprint arXiv:2504.12696},
   year={2025}
 }
-```bibtex
-
-
-
+```
 
 - 其他=================
 
