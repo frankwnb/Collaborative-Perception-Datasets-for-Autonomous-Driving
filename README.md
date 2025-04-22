@@ -1067,6 +1067,7 @@ If you find our repository helpful, please consider citing our work:
   journal={arXiv preprint arXiv:2504.12696},
   year={2025}
 }
+```bibtex
 
 
 
