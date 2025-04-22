@@ -13,6 +13,7 @@ First, the repository introduces commonly used **autonomous driving simulation t
 - [V2X Datasets](#v2x-datasets-anchor)
 - [I2I Datasets](#i2i-datasets-anchor)
 - [Methods](#methods-anchor)
+- [Citation](#citation-anchor)
 
 
 ## :bookmark:Simulator  <a id="simulator-anchor"></a>
@@ -1050,6 +1051,22 @@ Abstract: In this paper, we investigate improving the perception performance of 
 ### Mar 2023  
 ### Feb 2023  
 ### Jan 2023  
+
+## :bookmark:Citation  <a id="citation-anchor"></a>
+
+Our survey paper is at[Collaborative Perception Datasets for Autonomous Driving: A Review](https://arxiv.org/abs/2504.12696) which includes more detailed discussions and will be continuously updated. The latest version was updated on April 16, 2025.
+
+If you find our repo is helpful, please consider cite it.
+
+@article{wang2025collaborative,
+  title={Collaborative Perception Datasets for Autonomous Driving: A Review},
+  author={Wang, Naibang and Shang, Deyong and Gong, Yan and Hu, Xiaoxi and Song, Ziying and Yang, Lei and Huang, Yuhan and Wang, Xiaoyu and Lu, Jianli},
+  journal={arXiv preprint arXiv:2504.12696},
+  year={2025}
+}
+
+
+
 
 
 - 其他=================
