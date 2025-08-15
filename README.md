@@ -1066,7 +1066,20 @@ If you find our repository helpful, please consider citing our work:
   journal={arXiv preprint arXiv:2504.12696},
   year={2025}
 }
+
+@ARTICLE{11074299,
+  author={Wang, Naibang and Shang, Deyong and Gong, Yan and Hu, Xiaoxi and Song, Ziying and Yang, Lei and Huang, Yuhan and Wang, Xiaoyu and Lu, Jianli},
+  journal={IEEE Sensors Journal}, 
+  title={Collaborative Perception Datasets for Autonomous Driving: A Review}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Collaboration;Sensors;Reviews;Autonomous vehicles;Intelligent sensors;Object detection;Measurement;Annotations;Vehicular ad hoc networks;Vehicle-to-infrastructure;Autonomous Driving;Collaborative Perception;Datasets;V2X Communication;Perception Tasks},
+  doi={10.1109/JSEN.2025.3582040}}
 ```
+
+
 
 - 其他=================
 
