@@ -1058,15 +1058,9 @@ Our survey paper is at[Collaborative Perception Datasets for Autonomous Driving:
 
 If you find our repository helpful, please consider citing our work:
 
-> Wang, Naibang, et al. **"Collaborative Perception Datasets for Autonomous Driving: A Review."** arXiv preprint arXiv:2504.12696, 2025.
-```BibTeX
-@article{wang2025collaborative,
-  title={Collaborative Perception Datasets for Autonomous Driving: A Review},
-  author={Wang, Naibang and Shang, Deyong and Gong, Yan and Hu, Xiaoxi and Song, Ziying and Yang, Lei and Huang, Yuhan and Wang, Xiaoyu and Lu, Jianli},
-  journal={arXiv preprint arXiv:2504.12696},
-  year={2025}
-}
+- IEEE录用版本引用
 
+```BibTeX
 @ARTICLE{11074299,
   author={Wang, Naibang and Shang, Deyong and Gong, Yan and Hu, Xiaoxi and Song, Ziying and Yang, Lei and Huang, Yuhan and Wang, Xiaoyu and Lu, Jianli},
   journal={IEEE Sensors Journal}, 
@@ -1079,6 +1073,17 @@ If you find our repository helpful, please consider citing our work:
   doi={10.1109/JSEN.2025.3582040}}
 ```
 
+- arXiv版本引用
+
+> Wang, Naibang, et al. **"Collaborative Perception Datasets for Autonomous Driving: A Review."** arXiv preprint arXiv:2504.12696, 2025.
+```BibTeX
+@article{wang2025collaborative,
+  title={Collaborative Perception Datasets for Autonomous Driving: A Review},
+  author={Wang, Naibang and Shang, Deyong and Gong, Yan and Hu, Xiaoxi and Song, Ziying and Yang, Lei and Huang, Yuhan and Wang, Xiaoyu and Lu, Jianli},
+  journal={arXiv preprint arXiv:2504.12696},
+  year={2025}
+}
+```
 
 
 - 其他=================
